@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import TinTucItem from '@/components/TinTucItem';
 import { tinTucData } from '@/assets/assets';
+import config from '@/configs';
+import { Link } from 'react-router-dom';
 
 function TinTuc() {
     const swiperRef = useRef(null);
@@ -33,13 +35,25 @@ function TinTuc() {
                     >
                         {tinTucData.map((item, index) => (
                             <SwiperSlide className="relative">
-                                <TinTucItem
-                                    key={index}
-                                    name={item.name}
-                                    slug={item.slug}
-                                    date={item.date}
-                                    image={item.image}
-                                />
+                                <div key={index} className="group overflow-hidden transition-all duration-300 mb-8">
+                                    <div className="overflow-hidden rounded-xl">
+                                        <Link to={`${config.routes.TinTuc}/${item.slug}`}>
+                                            <img
+                                                src={item.image}
+                                                alt=""
+                                                className="w-full h-auto object-cover rounded-xl group-hover:scale-110 duration-300"
+                                            />
+                                        </Link>
+                                    </div>
+                                    <div className="mt-4">
+                                        <Link to={`${config.routes.TinTuc}/${item.slug}`}>
+                                            <h1 className="text-lg font-semibold text-primary-blueOne line-clamp-2">
+                                                {item.name}
+                                            </h1>
+                                        </Link>
+                                        <p className="mt-2 text-sm">{item.date}</p>
+                                    </div>
+                                </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>

@@ -33,7 +33,7 @@ function App() {
                                     <Suspense
                                         fallback={
                                             <div className="flex justify-center items-center h-screen">
-                                                <ClipLoader color="#ed1e26" size={50} />
+                                                <ClipLoader color="#00448b" size={50} />
                                             </div>
                                         }
                                     >

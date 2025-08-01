@@ -4,6 +4,8 @@ const routes = {
     HocLaiXeOToHangB1: '/hoc-lai-xe-o-to-hang-b1',
     HocLaiXeOToHangB2: '/hoc-lai-xe-o-to-hang-b2',
     HocLaiXeOToHangC: '/hoc-lai-xe-o-to-hang-c',
+    TinTuc: '/tin-tuc',
+    LienHe: '/lien-he',
 };
 
 export default routes;

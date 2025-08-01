@@ -79,7 +79,11 @@ function Header() {
                             <div className="flex items-center gap-2 hover:text-primary-blueOne duration-300 cursor-pointer">
                                 <h1
                                     className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
-                                        location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                        location.pathname === config.routes.HocLaiXeOToHangB1 ||
+                                        location.pathname === config.routes.HocLaiXeOToHangB2 ||
+                                        location.pathname === config.routes.HocLaiXeOToHangC
+                                            ? 'text-primary-blueOne'
+                                            : ''
                                     }`}
                                 >
                                     Khóa học lái xe
@@ -126,27 +130,27 @@ function Header() {
                         <Link to={config.routes.home}>
                             <h1
                                 className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
-                                    location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                    location.pathname === config.routes.Ban ? 'text-primary-blueOne' : ''
                                 }`}
                             >
                                 Bảng giá học phí
                             </h1>
                         </Link>
 
-                        <Link to={config.routes.home}>
+                        <Link to={config.routes.TinTuc}>
                             <h1
                                 className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
-                                    location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                    location.pathname === config.routes.TinTuc ? 'text-primary-blueOne' : ''
                                 }`}
                             >
                                 Tin tức
                             </h1>
                         </Link>
 
-                        <Link to={config.routes.home}>
+                        <Link to={config.routes.LienHe}>
                             <h1
                                 className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
-                                    location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                    location.pathname === config.routes.LienHe ? 'text-primary-blueOne' : ''
                                 }`}
                             >
                                 Liên hệ
