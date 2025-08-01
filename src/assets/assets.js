@@ -1,4 +1,4 @@
-import logo from './images/logo/logo.jpg';
+import logo from './images/logo/logo.png';
 
 // Sliders
 import slider1 from './images/sliders/slider_1.jpg';
@@ -17,6 +17,7 @@ import khoaHocB2 from './images/khoa_hoc_b2.jpg';
 import khoaHocC from './images/khoa_hoc_c.jpg';
 import tuVanCacKhoaHoc from './images/tu_van_cac_khoa_hoc.jpg';
 import khaiGiangLopHoc from './images/khai_giang_lop_hoc.jpg';
+import nguyenDoanhChinh from './images/nguyen-doanh-chinh.jpg';
 
 export const assets = {
     logo,
@@ -29,6 +30,7 @@ export const assets = {
     khoaHocC,
     tuVanCacKhoaHoc,
     khaiGiangLopHoc,
+    nguyenDoanhChinh,
 };
 
 export const tinTucData = [

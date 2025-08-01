@@ -55,13 +55,21 @@ function Header() {
                     {/* Menu chính */}
                     <div className="flex items-center gap-8">
                         <Link to={config.routes.home}>
-                            <h1 className="font-semibold uppercase hover:text-primary-blueOne duration-300">
+                            <h1
+                                className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
+                                    location.pathname === config.routes.home ? 'text-primary-blueOne' : ''
+                                }`}
+                            >
                                 Trang chủ
                             </h1>
                         </Link>
 
-                        <Link to={config.routes.home}>
-                            <h1 className="font-semibold uppercase hover:text-primary-blueOne duration-300">
+                        <Link to={config.routes.GioiThieu}>
+                            <h1
+                                className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
+                                    location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                }`}
+                            >
                                 Giới thiệu
                             </h1>
                         </Link>
@@ -69,7 +77,13 @@ function Header() {
                         {/* Dropdown menu */}
                         <div className="relative" onMouseEnter={show} onMouseLeave={hide}>
                             <div className="flex items-center gap-2 hover:text-primary-blueOne duration-300 cursor-pointer">
-                                <h1 className="font-semibold uppercase">Khóa học lái xe</h1>
+                                <h1
+                                    className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
+                                        location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                    }`}
+                                >
+                                    Khóa học lái xe
+                                </h1>
                                 <FontAwesomeIcon
                                     icon={faAngleDown}
                                     size="sm"
@@ -82,7 +96,7 @@ function Header() {
                             {isDropdownOpen && (
                                 <div className="absolute left-0 top-full bg-white px-3 py-2 mt-2 shadow-lg border rounded-md w-64 z-20 transition duration-300">
                                     <Link
-                                        to="/khoa-hoc/a1"
+                                        to={config.routes.HocLaiXeOToHangB1}
                                         className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-blueOne duration-300"
                                     >
                                         Học lái xe ô tô hạng B1
@@ -110,17 +124,33 @@ function Header() {
                         </div>
 
                         <Link to={config.routes.home}>
-                            <h1 className="font-semibold uppercase hover:text-primary-blueOne duration-300">
+                            <h1
+                                className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
+                                    location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                }`}
+                            >
                                 Bảng giá học phí
                             </h1>
                         </Link>
 
                         <Link to={config.routes.home}>
-                            <h1 className="font-semibold uppercase hover:text-primary-blueOne duration-300">Tin tức</h1>
+                            <h1
+                                className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
+                                    location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                }`}
+                            >
+                                Tin tức
+                            </h1>
                         </Link>
 
                         <Link to={config.routes.home}>
-                            <h1 className="font-semibold uppercase hover:text-primary-blueOne duration-300">Liên hệ</h1>
+                            <h1
+                                className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
+                                    location.pathname === config.routes.GioiThieu ? 'text-primary-blueOne' : ''
+                                }`}
+                            >
+                                Liên hệ
+                            </h1>
                         </Link>
                     </div>
 

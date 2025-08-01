@@ -175,7 +175,7 @@ function Footer() {
                     <div className="flex gap-4 pt-10 pb-8">
                         <div className="flex flex-col gap-4 w-[33%]">
                             <div>
-                                <img src={assets.logo} alt="" className="w-[201px] h-[92px]" />
+                                <img src={assets.logo} alt="" className="w-40" />
                             </div>
                             <div>
                                 <h1 className="font-bold text-lg text-white my-4">Công ty cổ phần vận tải oto số 4</h1>
@@ -187,14 +187,14 @@ function Footer() {
                                 </p>
                                 <p className="text-sm font-medium text-[#ddd]">
                                     <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                                    <a href="tel:1900 6750" className="hover:text-primary-blueOne duration-500">
-                                        1900 6750
+                                    <a href="tel:02373824988" className="hover:text-primary-blueOne duration-500">
+                                        0237 3824 988
                                     </a>
                                 </p>
                                 <p className="text-sm font-medium text-[#ddd]">
                                     <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                                     <a
-                                        href="mailto:info@reallogistics.vn"
+                                        href="mailto:congtycophanvantaiotoso4@gmail.com"
                                         className="hover:text-primary-blueOne duration-500"
                                     >
                                         info@reallogistics.vn
