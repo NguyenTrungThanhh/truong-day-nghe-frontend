@@ -12,7 +12,7 @@ import TaiSao from '@/components/TaiSao';
 import { useRef } from 'react';
 import HinhAnhTaiTrungTam from '@/components/HinhAnhTaiTrungTam';
 
-function HocLaiXeOToHangB1() {
+function HocLaiXeOToHangC() {
     const swiperRef = useRef(null);
 
     return (
@@ -24,7 +24,7 @@ function HocLaiXeOToHangB1() {
                             <h1>Trang chủ</h1>
                         </Link>
                         <FontAwesomeIcon icon={faAngleRight} size="xs" className="mt-1" />
-                        <h1 className="text-primary-blueOne">Học lái xe ô tô hạng B1</h1>
+                        <h1 className="text-primary-blueOne">Học lái xe ô tô hạng C</h1>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@ function HocLaiXeOToHangB1() {
                 <div className="flex justify-center items-center gap-4 mb-8">
                     <hr className="w-[17%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        5 sai lầm thường gặp khi học lái xe hạng b1 - số tự động
+                        5 sai lầm thường gặp khi học lái xe hạng C - xe tải
                     </h1>
                     <hr className="w-[17%] border-t-[1px] border-primary-blueOne" />
                 </div>
@@ -74,7 +74,7 @@ function HocLaiXeOToHangB1() {
                     <div className="flex justify-center items-center gap-4 mb-8">
                         <hr className="w-[15%]" />
                         <h1 className="text-2xl font-bold text-white uppercase">
-                            Đào tạo lái xe Hạng b1 - số tự động LOD có những ưu điểm gì
+                            Đào tạo lái xe Hạng C - xe tải LOD có những ưu điểm gì
                         </h1>
                         <hr className="w-[15%]" />
                     </div>
@@ -113,12 +113,12 @@ function HocLaiXeOToHangB1() {
                     <div className="flex justify-center items-center gap-4 mb-8">
                         <hr className="w-[19%]" />
                         <h1 className="text-2xl font-bold text-white uppercase">
-                            Nội dung khóa học lái xe hạng b1 - số tự động tại LOD
+                            Nội dung khóa học lái xe hạng C - xe tải tại LOD
                         </h1>
                         <hr className="w-[19%]" />
                     </div>
                     <p className="text-center text-white mb-8">
-                        Giáo trình giảng dạy bám sát nội dung 11 bài thi lái xe Ô tô hạng B1 với mong muốn học viên đạt
+                        Giáo trình giảng dạy bám sát nội dung 11 bài thi lái xe Ô tô hạng C với mong muốn học viên đạt
                         tỷ lệ đỗ cao nhất.
                     </p>
                     <div className="grid grid-cols-2 gap-8">
@@ -237,7 +237,7 @@ function HocLaiXeOToHangB1() {
                 <div className="flex justify-center items-center gap-4 mb-8">
                     <hr className="w-[16%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        Đăng ký khu vực học lái xe hạng b1 - số tự động gần nhất
+                        Đăng ký khu vực học lái xe hạng C - xe tải gần nhất
                     </h1>
                     <hr className="w-[16%] border-t-[1px] border-primary-blueOne" />
                 </div>
@@ -314,7 +314,7 @@ function HocLaiXeOToHangB1() {
                 <div className="flex justify-center items-center gap-4 mb-8">
                     <hr className="w-[22%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        Lợi ích sau khóa học lái xe hạng b1 - số tự động
+                        Lợi ích sau khóa học lái xe hạng C - xe tải
                     </h1>
                     <hr className="w-[22%] border-t-[1px] border-primary-blueOne" />
                 </div>
@@ -497,10 +497,10 @@ function HocLaiXeOToHangB1() {
                         <div>
                             <div className="p-[10px] bg-white rounded-t-lg">
                                 <h1 className="text-2xl font-bold uppercase text-center text-primary-blueOne">
-                                    Khóa học hạng B2
+                                    Khóa học hạng C
                                 </h1>
                             </div>
-                            <img src={assets.khoaHocB2} alt="" className="w-full h-52 object-cover" />
+                            <img src={assets.khoaHocC} alt="" className="w-full h-52 object-cover" />
                             <div className="p-3 flex flex-col gap-2 bg-white rounded-b-lg">
                                 <p>
                                     Ưu đãi: <span className="text-primary-blueOne">Giảm 500k</span> khi đăng ký online
@@ -512,14 +512,14 @@ function HocLaiXeOToHangB1() {
                                 <p>Học 1 thầy 1 trò</p>
                                 <p>Học gần nhà, thời gian linh hoạt</p>
                                 <p>Thời gian đào tạo và thi: 3.0 tháng</p>
-                                <p className="font-bold text-primary-blueOne">Đăng ký khóa B2 chỉ 16 triệu</p>
+                                <p className="font-bold text-primary-blueOne">Đăng ký khóa C chỉ 16 triệu</p>
                                 <p>Giảm 100k/HV khi đăng ký nhóm</p>
                                 <p>Có chương trình nâng cao</p>
                                 <p className="text-center">
                                     Cam kết <b className="text-primary-blueOne">KHÔNG</b> phát sinh thêm chi phí
                                 </p>
                                 <div className="flex justify-center border-t pt-4">
-                                    <Link to={config.routes.HocLaiXeOToHangB2} className="w-full">
+                                    <Link to={config.routes.HocLaiXeOToHangC} className="w-full">
                                         <button className="bg-primary-blueOne text-white font-bold uppercase w-full px-6 py-2 rounded-full hover:bg-primary-blueTwo duration-300">
                                             Chi tiết
                                         </button>
@@ -567,4 +567,4 @@ function HocLaiXeOToHangB1() {
     );
 }
 
-export default HocLaiXeOToHangB1;
+export default HocLaiXeOToHangC;

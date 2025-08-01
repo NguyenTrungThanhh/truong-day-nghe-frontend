@@ -12,7 +12,7 @@ import TaiSao from '@/components/TaiSao';
 import { useRef } from 'react';
 import HinhAnhTaiTrungTam from '@/components/HinhAnhTaiTrungTam';
 
-function HocLaiXeOToHangB1() {
+function HocLaiXeOToHangB2() {
     const swiperRef = useRef(null);
 
     return (
@@ -24,7 +24,7 @@ function HocLaiXeOToHangB1() {
                             <h1>Trang chủ</h1>
                         </Link>
                         <FontAwesomeIcon icon={faAngleRight} size="xs" className="mt-1" />
-                        <h1 className="text-primary-blueOne">Học lái xe ô tô hạng B1</h1>
+                        <h1 className="text-primary-blueOne">Học lái xe ô tô hạng B2</h1>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@ function HocLaiXeOToHangB1() {
                 <div className="flex justify-center items-center gap-4 mb-8">
                     <hr className="w-[17%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        5 sai lầm thường gặp khi học lái xe hạng b1 - số tự động
+                        5 sai lầm thường gặp khi học lái xe hạng b2 - xe số sàn
                     </h1>
                     <hr className="w-[17%] border-t-[1px] border-primary-blueOne" />
                 </div>
@@ -74,7 +74,7 @@ function HocLaiXeOToHangB1() {
                     <div className="flex justify-center items-center gap-4 mb-8">
                         <hr className="w-[15%]" />
                         <h1 className="text-2xl font-bold text-white uppercase">
-                            Đào tạo lái xe Hạng b1 - số tự động LOD có những ưu điểm gì
+                            Đào tạo lái xe Hạng b2 - xe số sàn LOD có những ưu điểm gì
                         </h1>
                         <hr className="w-[15%]" />
                     </div>
@@ -113,12 +113,12 @@ function HocLaiXeOToHangB1() {
                     <div className="flex justify-center items-center gap-4 mb-8">
                         <hr className="w-[19%]" />
                         <h1 className="text-2xl font-bold text-white uppercase">
-                            Nội dung khóa học lái xe hạng b1 - số tự động tại LOD
+                            Nội dung khóa học lái xe hạng b2 - xe số sàn tại LOD
                         </h1>
                         <hr className="w-[19%]" />
                     </div>
                     <p className="text-center text-white mb-8">
-                        Giáo trình giảng dạy bám sát nội dung 11 bài thi lái xe Ô tô hạng B1 với mong muốn học viên đạt
+                        Giáo trình giảng dạy bám sát nội dung 11 bài thi lái xe Ô tô hạng B2 với mong muốn học viên đạt
                         tỷ lệ đỗ cao nhất.
                     </p>
                     <div className="grid grid-cols-2 gap-8">
@@ -237,7 +237,7 @@ function HocLaiXeOToHangB1() {
                 <div className="flex justify-center items-center gap-4 mb-8">
                     <hr className="w-[16%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        Đăng ký khu vực học lái xe hạng b1 - số tự động gần nhất
+                        Đăng ký khu vực học lái xe hạng b2 - xe số sàn gần nhất
                     </h1>
                     <hr className="w-[16%] border-t-[1px] border-primary-blueOne" />
                 </div>
@@ -314,7 +314,7 @@ function HocLaiXeOToHangB1() {
                 <div className="flex justify-center items-center gap-4 mb-8">
                     <hr className="w-[22%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        Lợi ích sau khóa học lái xe hạng b1 - số tự động
+                        Lợi ích sau khóa học lái xe hạng b2 - xe số sàn
                     </h1>
                     <hr className="w-[22%] border-t-[1px] border-primary-blueOne" />
                 </div>
@@ -567,4 +567,4 @@ function HocLaiXeOToHangB1() {
     );
 }
 
-export default HocLaiXeOToHangB1;
+export default HocLaiXeOToHangB2;

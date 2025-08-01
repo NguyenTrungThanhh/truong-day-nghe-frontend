@@ -81,7 +81,8 @@ function Header() {
                                     className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
                                         location.pathname === config.routes.HocLaiXeOToHangB1 ||
                                         location.pathname === config.routes.HocLaiXeOToHangB2 ||
-                                        location.pathname === config.routes.HocLaiXeOToHangC
+                                        location.pathname === config.routes.HocLaiXeOToHangC ||
+                                        location.pathname === config.routes.KhoaNangHangDLenE
                                             ? 'text-primary-blueOne'
                                             : ''
                                     }`}
@@ -106,19 +107,19 @@ function Header() {
                                         Học lái xe ô tô hạng B1
                                     </Link>
                                     <Link
-                                        to="/khoa-hoc/b2"
+                                        to={config.routes.HocLaiXeOToHangB2}
                                         className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-blueOne duration-300"
                                     >
                                         Học lái xe ô tô hạng B2
                                     </Link>
                                     <Link
-                                        to="/khoa-hoc/c"
+                                        to={config.routes.HocLaiXeOToHangC}
                                         className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-blueOne duration-300"
                                     >
                                         Học lái xe tải hạng C
                                     </Link>
                                     <Link
-                                        to="/khoa-hoc/nanghang"
+                                        to={config.routes.KhoaNangHangDLenE}
                                         className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-primary-blueOne duration-300"
                                     >
                                         Nâng hạng D lên E
