@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import SidebarMenu from '@/components/SidebarMenu';
 import config from '@/configs';
 import TinTucItem from '@/components/TinTucItem';
-import { tinTucData } from '@/assets/assets';
+import { TruongDayngheContext } from '@/context/TruongDayngheContext';
 
 function TinTuc() {
+    const { tinTucData } = useContext(TruongDayngheContext);
+
     useEffect(() => {
         document.title = 'Tin tức';
     });

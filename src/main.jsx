@@ -3,13 +3,13 @@ import { createRoot } from 'react-dom/client';
 import { ToastContainer } from 'react-toastify';
 import './index.css';
 import App from './App.jsx';
-// import KhongKhoangCachContextProvider from '@/context/KhongKhoangCachContext';
+import TruongDayngheContextProvider from '@/context/TruongDayngheContext';
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        {/* <KhongKhoangCachContextProvider> */}
-        <ToastContainer />
-        <App />
-        {/* </KhongKhoangCachContextProvider> */}
+        <TruongDayngheContextProvider>
+            <ToastContainer />
+            <App />
+        </TruongDayngheContextProvider>
     </StrictMode>,
 );

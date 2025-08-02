@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { use, useContext, useEffect, useRef, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectFade } from 'swiper/modules';
@@ -10,10 +10,11 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import config from '@/configs';
-import TinTucItem from '@/components/TinTucItem';
-import { tinTucData } from '@/assets/assets';
+import { TruongDayngheContext } from '@/context/TruongDayngheContext';
 
 function DisplayTinTuc() {
+    const { tinTucData } = useContext(TruongDayngheContext);
+
     const swiperRef = useRef(null);
 
     const { slug } = useParams();
@@ -32,6 +33,10 @@ function DisplayTinTuc() {
         fetchData();
         console.log(tinTucData);
     }, [slug]);
+
+    useEffect(() => {
+        document.title = newsData?.name;
+    });
 
     return (
         <>
@@ -54,7 +59,7 @@ function DisplayTinTuc() {
 
             {/* Main content */}
             <div className="w-[78%] mx-auto mt-10">
-                <div className="flex gap-6">
+                <div className="flex gap-6 items-start">
                     {/* Nội dung chính */}
                     <div className="w-[70%] pr-4">
                         {newsData ? (
@@ -69,10 +74,10 @@ function DisplayTinTuc() {
                     </div>
 
                     {/* Tin tức nổi bật */}
-                    <div className="w-[30%] pl-6 border-l border-gray-300">
+                    <div className="w-[30%] pl-6 border-l border-gray-300 sticky top-28">
                         <h2 className="text-2xl font-bold mb-4 text-primary-blueOne">Tin tức nổi bật</h2>
                         <div className="flex flex-col gap-8">
-                            {tinTucData.map((item, index) => (
+                            {tinTucData.slice(0, 6).map((item, index) => (
                                 <div key={index} className="flex items-center gap-4 group">
                                     <Link to={`${config.routes.TinTuc}/${item.slug}`}>
                                         <div>

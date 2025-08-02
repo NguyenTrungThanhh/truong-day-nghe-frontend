@@ -1,9 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
+import { useContext } from 'react';
 import config from '@/configs';
-import { tinTucData } from '@/assets/assets';
+import { TruongDayngheContext } from '@/context/TruongDayngheContext';
 
 function SidebarMenu() {
-    // const { combinedData } = useContext(HkaContext);
+    const { tinTucData } = useContext(TruongDayngheContext);
 
     const menuItems = [
         { path: config.routes.HocLaiXeOToHangB1, label: 'Học lái xe ô tô hạng B1' },
@@ -37,7 +38,7 @@ function SidebarMenu() {
                     <h3 className="font-bold uppercase">Bài viết gần đây</h3>
                 </div>
                 <div>
-                    {tinTucData.slice(0, 10).map((item, index, arr) => (
+                    {tinTucData.slice(0, 6).map((item, index, arr) => (
                         <div
                             key={index}
                             className={`flex items-center gap-3 my-2 px-2 py-1 ${
