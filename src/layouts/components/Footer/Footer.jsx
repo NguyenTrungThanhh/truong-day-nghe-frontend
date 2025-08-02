@@ -178,7 +178,9 @@ function Footer() {
                                 <img src={assets.logo} alt="" className="w-40" />
                             </div>
                             <div>
-                                <h1 className="font-bold text-lg text-white my-4">Công ty cổ phần vận tải oto số 4</h1>
+                                <h1 className="font-bold text-lg text-white my-4 uppercase">
+                                    Công ty cổ phần vận tải oto số 4
+                                </h1>
                             </div>
                             <div className="flex flex-col gap-4">
                                 <p className="text-sm font-medium text-[#ddd]">
@@ -187,7 +189,7 @@ function Footer() {
                                 </p>
                                 <p className="text-sm font-medium text-[#ddd]">
                                     <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                                    <a href="tel:02373824988" className="hover:text-primary-blueOne duration-500">
+                                    <a href="tel:02373824988" className="hover:text-primary-blueTwo duration-500">
                                         0237 3824 988
                                     </a>
                                 </p>
@@ -195,7 +197,7 @@ function Footer() {
                                     <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                                     <a
                                         href="mailto:congtycophanvantaiotoso4@gmail.com"
-                                        className="hover:text-primary-blueOne duration-500"
+                                        className="hover:text-primary-blueTwo duration-500"
                                     >
                                         info@reallogistics.vn
                                     </a>
@@ -223,96 +225,68 @@ function Footer() {
                                 <h1 className="text-lg font-bold text-white mb-8">Về chúng tôi</h1>
                                 <ul className="text-sm">
                                     <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
+                                        <Link to={config.routes.GioiThieu}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
+                                                Giới thiệu
+                                            </p>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h1 className="text-lg font-bold text-white mb-8">Khóa học lái xe</h1>
+                                <ul className="text-sm">
+                                    <li>
+                                        <Link to={config.routes.HocLaiXeOToHangB1}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
+                                                Học lái xe ô tô hạng B1
+                                            </p>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to={config.routes.HocLaiXeOToHangB2}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
+                                                Học lái xe ô tô hạng B2
+                                            </p>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to={config.routes.HocLaiXeOToHangC}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
+                                                Học lái xe tải hạng C
+                                            </p>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to={config.routes.KhoaNangHangDLenE}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
+                                                Nâng hạng D lên E
+                                            </p>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h1 className="text-lg font-bold text-white mb-8">Liên kết</h1>
+                                <ul className="text-sm">
+                                    <li>
+                                        <Link to={config.routes.BangGiaHocPhi}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
+                                                Bảng giá học phí
+                                            </p>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to={config.routes.TinTuc}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
                                                 Tin tức
                                             </p>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Phát triển bền vững
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Tuyển dụng
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Về chúng tôi
-                                            </p>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h1 className="text-lg font-bold text-white mb-8">Dịch vụ</h1>
-                                <ul className="text-sm">
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Vận chuyển
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Lĩnh vực
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Logistics & chuỗi cung ứng
-                                            </p>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h1 className="text-lg font-bold text-white mb-8">Hỗ trợ</h1>
-                                <ul className="text-sm">
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Yêu cầu tư vấn
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Câu hỏi thường gặp
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Theo dõi đơn hàng
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
+                                        <Link to={config.routes.LienHe}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
                                                 Liên hệ
-                                            </p>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link>
-                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueOne duration-300">
-                                                Tài nguyên
                                             </p>
                                         </Link>
                                     </li>

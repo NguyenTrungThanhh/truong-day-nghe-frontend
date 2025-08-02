@@ -6,9 +6,10 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
+    const hideTimer = useRef(null);
     const [isSticky, setIsSticky] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const hideTimer = useRef(null);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -128,10 +129,10 @@ function Header() {
                             )}
                         </div>
 
-                        <Link to={config.routes.home}>
+                        <Link to={config.routes.BangGiaHocPhi}>
                             <h1
                                 className={`font-semibold uppercase hover:text-primary-blueOne duration-300 ${
-                                    location.pathname === config.routes.Ban ? 'text-primary-blueOne' : ''
+                                    location.pathname === config.routes.BangGiaHocPhi ? 'text-primary-blueOne' : ''
                                 }`}
                             >
                                 Bảng giá học phí
@@ -161,8 +162,47 @@ function Header() {
 
                     {/* Nút đăng ký */}
                     <div className="bg-primary-blueOne px-4 py-2 rounded-full hover:bg-primary-blueTwo duration-300">
-                        <button className="font-semibold uppercase text-white">Đăng ký ngay</button>
+                        <button className="font-semibold uppercase text-white" onClick={() => setShowModal(true)}>
+                            Đăng ký ngay
+                        </button>
                     </div>
+                    {showModal && (
+                        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[60]">
+                            <div className="bg-white p-6 rounded-lg w-[90%] max-w-sm shadow-lg">
+                                <h2 className="text-lg font-bold mb-4 text-center">Bạn muốn làm gì?</h2>
+                                <div className="flex flex-col gap-3">
+                                    <a
+                                        href="https://datxere.vn/?p=81259&auto=1&dichvu=xgh"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-primary-blueOne text-white py-2 px-4 rounded text-center hover:opacity-90"
+                                    >
+                                        Đăng ký qua fanpage
+                                    </a>
+                                    <a
+                                        href="https://datxere.vn/?p=81259&auto=1&dichvu=xgh"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-primary-blueOne text-white py-2 px-4 rounded text-center hover:opacity-90"
+                                    >
+                                        Đăng ký qua fanpage
+                                    </a>
+                                    <a
+                                        href="tel:19008638"
+                                        className="bg-primary-blueOne text-white py-2 px-4 rounded text-center hover:opacity-90"
+                                    >
+                                        Gọi trực tiếp 1900 8638
+                                    </a>
+                                    <button
+                                        onClick={() => setShowModal(false)}
+                                        className="mt-2 py-2 px-4 text-white rounded bg-primary-blueTwo hover:opacity-90 text-sm"
+                                    >
+                                        Đóng
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </>

@@ -7,8 +7,13 @@ import ThongTinGiangVien from '@/components/ThongTinGiangVien';
 import CamNhan from '@/components/CamNhan';
 import HinhAnhTaiTrungTam from '@/components/HinhAnhTaiTrungTam';
 import TinTuc from '@/components/TinTuc';
+import { useEffect } from 'react';
 
 function Home() {
+    useEffect(() => {
+        document.title = 'Công ty cổ phần vận tải oto số 4';
+    });
+
     return (
         <>
             <SwiperSlider />

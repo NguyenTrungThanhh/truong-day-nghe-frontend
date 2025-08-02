@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -6,14 +7,17 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import TaiSao from '@/components/TaiSao';
+import HinhAnhTaiTrungTam from '@/components/HinhAnhTaiTrungTam';
 import config from '@/configs';
 import { assets } from '@/assets/assets';
-import TaiSao from '@/components/TaiSao';
-import { useRef } from 'react';
-import HinhAnhTaiTrungTam from '@/components/HinhAnhTaiTrungTam';
 
 function KhoaNangHangDLenE() {
     const swiperRef = useRef(null);
+
+    useEffect(() => {
+        document.title = 'Khóa học nâng hạng D - E';
+    });
 
     return (
         <>
