@@ -1,5 +1,9 @@
 import logo from './images/logo/logo.png';
 
+// Admin
+import upload_area from './images/admin/upload_area.png';
+import upload_added from './images/admin/upload_added.png';
+
 // Sliders
 import slider1 from './images/sliders/slider_1.jpg';
 
@@ -21,6 +25,8 @@ import nguyenDoanhChinh from './images/nguyen-doanh-chinh.jpg';
 
 export const assets = {
     logo,
+    upload_area,
+    upload_added,
     slider1,
     iconMessenger,
     iconZalo,

@@ -42,8 +42,6 @@ function SidebarAdmin() {
                     {[
                         { to: config.routes.addTinTuc, text: 'Thêm tin tức' },
                         { to: config.routes.listTinTuc, text: 'Danh sách tin tức' },
-                        { to: config.routes.addTuyenDung, text: 'Thêm tuyển dụng' },
-                        { to: config.routes.listTuyenDung, text: 'Danh sách tuyển dụng' },
                     ].map((item, index) => (
                         <SidebarLink key={index} to={item.to} text={item.text} onClick={() => setIsOpen(false)} />
                     ))}

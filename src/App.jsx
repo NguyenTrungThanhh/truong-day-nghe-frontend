@@ -22,7 +22,7 @@ function App() {
                     }
 
                     // Bọc các route admin cần bảo vệ
-                    const isAdminRoute = route.path.startsWith('/admin') && route.path !== '/admin';
+                    const isAdminRoute = route.path?.startsWith('/admin') && route.path !== '/admin';
 
                     return (
                         <Route

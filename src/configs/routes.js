@@ -8,6 +8,10 @@ const routes = {
     BangGiaHocPhi: '/bang-gia-hoc-phi',
     TinTuc: '/tin-tuc',
     LienHe: '/lien-he',
+
+    admin: '/admin',
+    addTinTuc: '/admin/add-tin-tuc',
+    listTinTuc: '/admin/list-tin-tuc',
 };
 
 export default routes;

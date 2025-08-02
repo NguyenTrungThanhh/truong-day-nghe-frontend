@@ -13,11 +13,15 @@ const TinTuc = lazy(() => import('@/pages/TinTuc'));
 const LienHe = lazy(() => import('@/pages/LienHe'));
 
 // Lazy load Admin pages
+const Admin = lazy(() => import('@/pages/Admin'));
+const AddTinTuc = lazy(() => import('@/pages/AddTinTuc'));
+const ListTinTuc = lazy(() => import('@/pages/ListTinTuc'));
 
 // Lazy load Display pages
 const DisplayTinTuc = lazy(() => import('@/pages/DisplayTinTuc'));
 
 // Admin Layout
+import AdminLayout from '@/layouts/AdminLayout';
 
 const publicRoutes = [
     { path: config.routes.home, component: Home },
@@ -31,6 +35,9 @@ const publicRoutes = [
     { path: config.routes.LienHe, component: LienHe },
 
     // Admin Pages
+    { path: config.routes.admin, component: Admin, layout: AdminLayout },
+    { path: config.routes.addTinTuc, component: AddTinTuc, layout: AdminLayout },
+    { path: config.routes.listTinTuc, component: ListTinTuc, layout: AdminLayout },
 
     // Display Pages
     { path: config.routes.TinTuc + `/:slug`, component: DisplayTinTuc },
