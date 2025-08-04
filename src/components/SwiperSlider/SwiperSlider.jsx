@@ -9,7 +9,7 @@ function SwiperSlider() {
     const sliders = [assets.slider1, assets.slider1, assets.slider1, assets.slider1, assets.slider1];
 
     return (
-        <div className="">
+        <div className="w-full">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 autoplay={{
@@ -17,12 +17,12 @@ function SwiperSlider() {
                     disableOnInteraction: false,
                 }}
                 loop
-                className="w-full h-[475px]"
+                className="w-full"
             >
                 {sliders.map((slider, index) => (
                     <SwiperSlide key={index}>
-                        <div className="w-full h-full sm:h-[400px] md:h-[500px] lg:h-[640px] object-cover overflow-hidden">
-                            <img src={slider} alt={`Slide ${index + 1}`} className="w-full h-full" />
+                        <div className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[440px] xl:h-[520px] overflow-hidden">
+                            <img src={slider} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
                         </div>
                     </SwiperSlide>
                 ))}

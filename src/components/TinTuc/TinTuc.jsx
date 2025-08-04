@@ -17,25 +17,32 @@ function TinTuc() {
 
     return (
         <div className="w-full py-16">
-            <div className="w-[80%] mx-auto">
-                <div className="flex justify-center items-center gap-4 mb-8">
-                    <hr className="w-[44%] border-t-[1px] border-primary-blueOne" />
+            <div className="w-[90%] lg:w-[80%] mx-auto">
+                {/* Heading */}
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mb-8 text-center">
+                    <hr className="hidden lg:block w-[44%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">Tin tức</h1>
-                    <hr className="w-[44%] border-t-[1px] border-primary-blueOne" />
+                    <hr className="hidden lg:block w-[44%] border-t-[1px] border-primary-blueOne" />
                 </div>
+
                 <div className="relative">
+                    {/* Swiper */}
                     <Swiper
                         ref={swiperRef}
                         modules={[Navigation, Pagination, EffectFade]}
-                        slidesPerView={3}
+                        loop={true}
                         spaceBetween={20}
                         slidesPerGroup={1}
-                        loop={true}
+                        breakpoints={{
+                            0: { slidesPerView: 1 },
+                            640: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                        }}
                         className="relative z-0 h-full"
                     >
                         {tinTucData.map((item, index) => (
-                            <SwiperSlide className="relative">
-                                <div key={index} className="group overflow-hidden transition-all duration-300 mb-8">
+                            <SwiperSlide key={index} className="relative">
+                                <div className="group overflow-hidden transition-all duration-300 mb-8">
                                     <div className="overflow-hidden rounded-xl">
                                         <Link to={`${config.routes.TinTuc}/${item.slug}`}>
                                             <img
@@ -60,7 +67,7 @@ function TinTuc() {
 
                     {/* Nút Prev */}
                     <div
-                        className="absolute top-28 -left-24 -translate-y-1/2 z-10 group w-[72px] h-[72px] border-2 rounded-full flex items-center justify-center hover:bg-primary-blueOne/10 transition-colors duration-300 cursor-pointer"
+                        className="hidden lg:flex absolute top-28 -left-24 -translate-y-1/2 z-10 w-[72px] h-[72px] border-2 rounded-full items-center justify-center hover:bg-primary-blueOne/10 transition-colors duration-300 cursor-pointer"
                         onClick={() => swiperRef.current?.swiper?.slidePrev()}
                     >
                         <FontAwesomeIcon icon={faChevronLeft} size="lg" className="text-primary-blueOne" />
@@ -68,7 +75,7 @@ function TinTuc() {
 
                     {/* Nút Next */}
                     <div
-                        className="absolute top-28 -right-24 -translate-y-1/2 z-10 group w-[72px] h-[72px] border-2 rounded-full flex items-center justify-center hover:bg-primary-blueOne/10 transition-colors duration-300 cursor-pointer"
+                        className="hidden lg:flex absolute top-28 -right-24 -translate-y-1/2 z-10 w-[72px] h-[72px] border-2 rounded-full items-center justify-center hover:bg-primary-blueOne/10 transition-colors duration-300 cursor-pointer"
                         onClick={() => swiperRef.current?.swiper?.slideNext()}
                     >
                         <FontAwesomeIcon icon={faChevronRight} size="lg" className="text-primary-blueOne" />

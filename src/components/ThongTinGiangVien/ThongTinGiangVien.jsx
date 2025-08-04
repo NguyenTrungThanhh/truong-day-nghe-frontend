@@ -3,30 +3,30 @@ import { assets } from '@/assets/assets';
 function ThongTinGiangVien() {
     return (
         <div className="w-full py-16">
-            <div className="w-[80%] mx-auto">
-                <div className="flex justify-center items-center gap-4 mb-8">
-                    <hr className="w-[37%] border-t-[1px] border-primary-blueOne" />
+            <div className="w-[90%] lg:w-[80%] mx-auto">
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mb-8 text-center">
+                    <hr className="hidden lg:block w-[37%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">Thông tin giảng viên</h1>
-                    <hr className="w-[37%] border-t-[1px] border-primary-blueOne" />
+                    <hr className="hidden lg:block w-[37%] border-t-[1px] border-primary-blueOne" />
                 </div>
-            </div>
-            <div className="w-[80%] mx-auto">
+
                 <div className="p-4 bg-white rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
-                    <div className="flex gap-8">
-                        <div className="w-[25%]">
-                            <div className="flex flex-col gap-4">
-                                <img src={assets.gioiThieu} alt="" />
-                                <img src={assets.gioiThieu} alt="" />
-                            </div>
+                    <div className="flex flex-col lg:flex-row gap-8">
+                        {/* Hình ảnh */}
+                        <div className="w-full lg:w-[30%] flex flex-col gap-4">
+                            <img src={assets.gioiThieu} alt="" className="w-full rounded-md" />
+                            <img src={assets.gioiThieu} alt="" className="w-full rounded-md" />
                         </div>
-                        <div className="w-[75%]">
+
+                        {/* Nội dung */}
+                        <div className="w-full lg:w-[70%]">
                             <h1 className="font-bold text-primary-blueOne uppercase text-lg text-center py-4">
                                 Hơn 200 giáo viên đạt tiêu chuẩn{' '}
                                 <span className="text-primary-blueTwo font-bold">giáo viên dạy giỏi</span> do tổng cục
                                 đường bộ tổ chức thi hàng năm
                             </h1>
                             <hr className="border-t-[1px] border-primary-blueOne" />
-                            <div className="mt-4 flex flex-col gap-2">
+                            <div className="mt-4 flex flex-col gap-2 text-sm sm:text-base">
                                 <p>
                                     <span className="font-bold text-primary-blueOne">Độ tuổi: </span>Đội ngũ giáo viên
                                     trẻ, nhiệt huyết, yêu nghề.

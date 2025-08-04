@@ -171,9 +171,9 @@ function Footer() {
 
             {/* Footer content */}
             <div className="bg-primary-blueOne">
-                <div className="w-[80%] mx-auto">
-                    <div className="flex gap-4 pt-10 pb-8">
-                        <div className="flex flex-col gap-4 w-[33%]">
+                <div className="w-[90%] lg:w-[80%] mx-auto">
+                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-44 pt-10 pb-8">
+                        <div className="flex flex-col gap-4 lg:w-1/3 w-full">
                             <div>
                                 <img src={assets.logo} alt="" className="w-40" />
                             </div>
@@ -185,7 +185,7 @@ function Footer() {
                             <div className="flex flex-col gap-4">
                                 <p className="text-sm font-medium text-[#ddd]">
                                     <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
-                                    70 Lữ Gia, Phường 15, Quận 11, TP.HCM
+                                    Tổ dân phố 14, đường Trần Hưng Đạo, Phường Bỉm Sơn, Tỉnh Thanh Hoá
                                 </p>
                                 <p className="text-sm font-medium text-[#ddd]">
                                     <FontAwesomeIcon icon={faPhone} className="mr-2" />
@@ -196,31 +196,25 @@ function Footer() {
                                 <p className="text-sm font-medium text-[#ddd]">
                                     <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                                     <a
-                                        href="mailto:congtycophanvantaiotoso4@gmail.com"
+                                        href="mailto:truonglaioto4@gmail.com"
                                         className="hover:text-primary-blueTwo duration-500"
                                     >
-                                        info@reallogistics.vn
+                                        truonglaioto4@gmail.com
                                     </a>
                                 </p>
                             </div>
-                            <div className="flex items-center gap-3 my-8">
-                                {[faFacebookF, faLinkedinIn, faInstagram, faTiktok, faYoutube, faMessage].map(
-                                    (icon, index) => (
-                                        <a
-                                            href="https://www.facebook.com/reallogisticsvietnam"
-                                            target="_blank"
-                                            key={index}
-                                            className="group"
-                                        >
-                                            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center transition-transform duration-300 ease-in-out lg:group-hover:scale-110">
-                                                <FontAwesomeIcon icon={icon} size="lg" />
-                                            </div>
-                                        </a>
-                                    ),
-                                )}
+                            <div className="my-8">
+                                <a
+                                    href="https://www.facebook.com/profile.php?id=61558417543410"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block bg-white text-primary-600 font-medium px-5 py-2 rounded-full shadow-md hover:bg-primary-blueTwo hover:text-white transition-colors duration-300"
+                                >
+                                    Theo dõi chúng tôi trên Facebook
+                                </a>
                             </div>
                         </div>
-                        <div className="flex gap-44 mt-20">
+                        <div className="flex flex-col sm:flex-row gap-10 sm:gap-32 mt-10 lg:mt-20 lg:ml-auto lg:w-2/3">
                             <div>
                                 <h1 className="text-lg font-bold text-white mb-8">Về chúng tôi</h1>
                                 <ul className="text-sm">
@@ -298,20 +292,11 @@ function Footer() {
             </div>
 
             {/* Footer bottom */}
-            <div className="bg-primary-blueOne py-3 border-t border-[#8b7be6] pb-8">
-                <div className="w-[78%] mx-auto flex items-center justify-between">
-                    <div>
-                        <h1 className="text-sm text-[#ddd] font-medium">
-                            Copyright © 2025 Real Logistics Co., Ltd. All Rights Reserved
-                        </h1>
-                    </div>
-                    <div>
-                        <Link to={config.routes.DieuKhoanSuDung}>
-                            <h1 className="text-sm text-[#ddd] font-medium hover:text-primary-blueOne duration-300">
-                                Điều khoản & Chính sách
-                            </h1>
-                        </Link>
-                    </div>
+            <div className="bg-primary-blueOne border-t border-[#8b7be6] py-6">
+                <div className="w-[78%] mx-auto flex justify-center items-center">
+                    <h1 className="text-sm text-[#ddd] font-medium text-center">
+                        Copyright © 2025 Real Logistics Co., Ltd. All Rights Reserved
+                    </h1>
                 </div>
             </div>
         </>

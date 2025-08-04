@@ -3,16 +3,18 @@ import { assets } from '@/assets/assets';
 function UuDiem() {
     return (
         <div className="w-full bg-primary-blueOne py-16">
-            <div className="w-[80%] mx-auto">
-                <div className="flex justify-center items-center gap-4 mb-6">
-                    <hr className="w-[24%]" />
+            <div className="w-[90%] lg:w-[80%] mx-auto">
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mb-6 text-center">
+                    <hr className="hidden lg:block w-[40%] lg:w-[24%] border-white" />
                     <h1 className="text-2xl font-bold text-white uppercase">
                         Đào tạo lái xe ô tô Lod có những ưu điểm gì
                     </h1>
-                    <hr className="w-[24%]" />
+                    <hr className="hidden lg:block w-[40%] lg:w-[24%] border-white" />
                 </div>
-                <div className="flex gap-8">
-                    <div className="w-1/2">
+
+                <div className="flex flex-col lg:flex-row gap-8">
+                    {/* Text Content */}
+                    <div className="w-full lg:w-1/2">
                         <div className="flex flex-col gap-6">
                             <div>
                                 <h1 className="text-white text-lg font-bold uppercase mb-4">
@@ -42,10 +44,10 @@ function UuDiem() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/2">
-                        <div>
-                            <img src={assets.gioiThieu} alt="" className="rounded-xl" />
-                        </div>
+
+                    {/* Image */}
+                    <div className="w-full lg:w-1/2">
+                        <img src={assets.gioiThieu} alt="Ưu điểm" className="rounded-xl w-full object-cover" />
                     </div>
                 </div>
             </div>
