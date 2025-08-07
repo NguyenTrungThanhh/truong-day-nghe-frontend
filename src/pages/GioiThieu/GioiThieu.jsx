@@ -8,62 +8,74 @@ import { useEffect } from 'react';
 
 const GioiThieu = () => {
     const [ref, inView] = useInView({
-        triggerOnce: true, // chỉ kích hoạt 1 lần
-        threshold: 0.3, // kích hoạt khi 30% phần tử vào màn hình
+        triggerOnce: true,
+        threshold: 0.3,
     });
 
     useEffect(() => {
-        document.title = 'Giới thiệu';
-    });
+        document.title = 'Giới thiệu - Trung tâm Đào tạo lái xe thuộc Công ty Cổ phần Vận tải Ô tô số 4';
+    }, []);
 
     return (
         <>
             <div className="w-full bg-[#f4f4f4] py-4">
-                <div className="w-[80%] mx-auto">
-                    <div className="flex items-center gap-4 text-sm font-medium">
+                <div className="w-[90%] max-w-screen-xl mx-auto">
+                    <div className="flex flex-wrap items-center gap-2 text-sm font-medium">
                         <Link to={config.routes.home}>
                             <h1>Trang chủ</h1>
                         </Link>
-                        <FontAwesomeIcon icon={faAngleRight} size="xs" className="mt-1" />
-                        <h1 className="text-primary-blueOne">Giới thiệu</h1>
+                        <FontAwesomeIcon icon={faAngleRight} size="xs" className="mt-[2px]" />
+                        <h1 className="text-primary-blueOne">
+                            Giới thiệu Trung tâm Đào tạo lái xe thuộc Công ty Cổ phần Vận tải Ô tô số 4
+                        </h1>
                     </div>
                 </div>
             </div>
+
             <div className="p-4 md:p-8 max-w-screen-xl mx-auto space-y-10">
                 {/* Giới thiệu tổng quan */}
-                <section className="bg-white p-6 md:p-10 rounded-2xl shadow-md border border-gray-100">
-                    <h1 className="text-2xl md:text-3xl font-bold text-primary-blueOne mb-4">
-                        Giới thiệu Trung tâm Đào tạo Lái xe LOD
+                <section className="bg-white p-5 md:p-10 rounded-2xl shadow-md border border-gray-100">
+                    <h1 className="text-xl md:text-3xl font-bold text-primary-blueOne mb-4">
+                        Giới thiệu Trung tâm Đào tạo lái xe thuộc Công ty Cổ phần Vận tải Ô tô số 4
                     </h1>
-                    <div className="space-y-3 text-gray-700 leading-relaxed text-justify">
+                    <div className="space-y-4 text-gray-700 leading-relaxed text-justify text-sm md:text-base">
                         <p>
-                            Trung tâm Đào tạo Lái xe LOD là một trong những đơn vị đào tạo lái xe hàng đầu tại miền Bắc.
-                            Với hơn 20 năm kinh nghiệm trong lĩnh vực đào tạo và sát hạch lái xe, chúng tôi tự hào mang
-                            đến cho học viên một môi trường học tập chuyên nghiệp, hiện đại và an toàn.
+                            Được xây dựng từ những năm 2000 tại cửa ngõ phía Bắc tỉnh Thanh Hóa, Trung tâm Đào tạo lái
+                            xe mô tô và bổ túc nghề thuộc Công ty Cổ phần Vận tải Ô tô số 4 là một trong những đơn vị
+                            hàng đầu trong lĩnh vực đào tạo lái xe ô tô và mô tô tại Thanh Hóa – Ninh Bình.
                         </p>
                         <p>
-                            LOD sở hữu hệ thống sân tập rộng khắp các quận huyện Hà Nội, đáp ứng đa dạng nhu cầu và vị
-                            trí địa lý của học viên. Đội ngũ giảng viên là những người giàu kinh nghiệm, tận tâm trong
-                            giảng dạy và luôn cập nhật những kiến thức mới nhất về luật giao thông.
+                            Trung tâm hiện đang đào tạo các hạng bằng lái: A1, B (số tự động, số cơ khí), và C1. Cơ sở
+                            vật chất được trang bị đồng bộ, hiện đại với sân tập lái có tổng diện tích lên tới 26.000m²,
+                            hệ thống phòng học, phòng thi, và phòng cabin điện tử.
                         </p>
                         <p>
-                            Mỗi học viên tại LOD đều được hướng dẫn tận tình từ lý thuyết đến thực hành, đảm bảo nắm
-                            vững kỹ năng và tự tin khi tham gia giao thông sau khi tốt nghiệp.
+                            Đội ngũ gần 200 giáo viên của Trung tâm đều được đào tạo bài bản về nghiệp vụ sư phạm, có
+                            trình độ chuyên môn cao, giàu kinh nghiệm và luôn tâm huyết trong công tác giảng dạy.
+                        </p>
+                        <p>
+                            Xe tập lái là các dòng xe đời mới, đa dạng mẫu mã, được trang bị đầy đủ tính năng an toàn,
+                            giúp học viên yên tâm và thoải mái trong quá trình học. Nhờ đó, chất lượng đào tạo ngày càng
+                            được nâng cao và tỷ lệ thi đậu luôn ở mức cao.
+                        </p>
+                        <p>
+                            Sau khi hoàn thành khóa học, học viên sẽ được trang bị đầy đủ kiến thức và kỹ năng để tham
+                            gia giao thông một cách an toàn và tự tin.
                         </p>
                     </div>
                 </section>
 
                 {/* Sứ mệnh – Tầm nhìn – Giá trị cốt lõi */}
-                <section className="bg-white p-6 md:p-10 rounded-2xl shadow-md border border-gray-100">
-                    <h2 className="text-xl font-bold text-primary-blueOne mb-4">Sứ mệnh & Tầm nhìn</h2>
-                    <div className="space-y-3 text-gray-700 leading-relaxed">
+                <section className="bg-white p-5 md:p-10 rounded-2xl shadow-md border border-gray-100">
+                    <h2 className="text-xl md:text-2xl font-bold text-primary-blueOne mb-4">Sứ mệnh & Tầm nhìn</h2>
+                    <div className="space-y-3 text-gray-700 leading-relaxed text-sm md:text-base">
                         <p>
                             <strong>Sứ mệnh:</strong> Đào tạo thế hệ lái xe an toàn, chuyên nghiệp, góp phần xây dựng
                             văn hóa giao thông văn minh.
                         </p>
                         <p>
-                            <strong>Tầm nhìn:</strong> Trở thành trung tâm đào tạo lái xe hàng đầu miền Bắc với mạng
-                            lưới sân tập và chất lượng đào tạo chuẩn quốc gia.
+                            <strong>Tầm nhìn:</strong> Trở thành trung tâm đào tạo lái xe hàng đầu khu vực Thanh Hóa –
+                            Ninh Bình với cơ sở vật chất hiện đại và chất lượng đào tạo đạt chuẩn quốc gia.
                         </p>
                         <p>
                             <strong>Giá trị cốt lõi:</strong> Tận tâm – Chất lượng – Minh bạch – An toàn
@@ -72,11 +84,11 @@ const GioiThieu = () => {
                 </section>
 
                 {/* Thống kê nhanh */}
-                <section ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <section ref={ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
                     {[
                         { label: 'Học viên đã đào tạo', value: 25000, suffix: '+' },
-                        { label: 'Giảng viên giàu kinh nghiệm', value: 100, suffix: '+' },
-                        { label: 'Cơ sở sân tập', value: 10, suffix: '+' },
+                        { label: 'Giáo viên chuyên nghiệp', value: 200, suffix: '+' },
+                        { label: 'Diện tích sân tập', value: 26000, suffix: 'm²' },
                         { label: 'Tỉ lệ đậu lần đầu', value: 90, suffix: '%' },
                     ].map((item, idx) => (
                         <div key={idx} className="bg-[#f0f8ff] p-6 rounded-xl shadow-md">
@@ -87,15 +99,15 @@ const GioiThieu = () => {
                                     `${item.value}${item.suffix}`
                                 )}
                             </p>
-                            <p className="text-gray-600 mt-2">{item.label}</p>
+                            <p className="text-gray-600 mt-2 text-sm">{item.label}</p>
                         </div>
                     ))}
                 </section>
 
                 {/* Đánh giá học viên */}
-                <section className="bg-[#fafafa] p-8 rounded-2xl shadow-md space-y-6">
-                    <h2 className="text-xl font-bold text-primary-blueOne">Học viên nói gì về LOD?</h2>
-                    <div className="grid md:grid-cols-2 gap-6">
+                <section className="bg-[#fafafa] p-5 md:p-8 rounded-2xl shadow-md space-y-6">
+                    <h2 className="text-xl md:text-2xl font-bold text-primary-blueOne">Học viên nói gì?</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {[
                             {
                                 name: 'Nguyễn Thị Mai',
@@ -107,20 +119,20 @@ const GioiThieu = () => {
                             },
                         ].map((c, idx) => (
                             <div key={idx} className="bg-white p-4 rounded-xl border shadow-sm">
-                                <p className="text-gray-600 italic">“{c.comment}”</p>
+                                <p className="text-gray-600 italic text-sm md:text-base">“{c.comment}”</p>
                                 <p className="text-sm font-semibold mt-2 text-right text-primary-blueOne">– {c.name}</p>
                             </div>
                         ))}
                     </div>
                 </section>
 
-                {/* Video giới thiệu (nếu có) */}
+                {/* Video giới thiệu */}
                 <section className="mt-10 text-center">
-                    <h2 className="text-xl font-bold text-primary-blueOne mb-4">Video giới thiệu</h2>
+                    <h2 className="text-xl md:text-2xl font-bold text-primary-blueOne mb-4">Video giới thiệu</h2>
                     <div className="aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
                         <iframe
                             src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                            title="Giới thiệu LOD"
+                            title="Giới thiệu Trung tâm"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                             className="w-full h-full"

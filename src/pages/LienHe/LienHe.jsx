@@ -40,7 +40,7 @@ function LienHe() {
                                 </div>
                                 <div className="text-sm flex-1">
                                     <h1 className="font-bold">Địa chỉ</h1>
-                                    <p>70 Lữ Gia, Phường 15, Quận 11, TP.HCM</p>
+                                    <p>Tổ dân phố 14, đường Trần Hưng Đạo, Phường Bỉm Sơn, Tỉnh Thanh Hoá</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
@@ -58,8 +58,8 @@ function LienHe() {
                                 </div>
                                 <div className="text-sm flex-1">
                                     <h1 className="font-bold">Hotline</h1>
-                                    <a href="tel:19006750" className="hover:text-primary-blueOne duration-300">
-                                        1900 6750
+                                    <a href="tel:02373824988" className="hover:text-primary-blueOne duration-300">
+                                        0237 3824 988
                                     </a>
                                 </div>
                             </div>
@@ -70,10 +70,10 @@ function LienHe() {
                                 <div className="text-sm flex-1">
                                     <h1 className="font-bold">Email</h1>
                                     <a
-                                        href="mailto:support@sapo.vn"
+                                        href="mailto:truonglaioto4@gmail.com"
                                         className="hover:text-primary-blueOne duration-300"
                                     >
-                                        support@sapo.vn
+                                        truonglaioto4@gmail.com
                                     </a>
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ function LienHe() {
                     <div className="w-1/2">
                         <div className="w-[640px] h-[608px]">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3723.9042716018666!2d105.815878!3d21.036516!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab1946cc7e23%3A0x87ab3917166a0cd5!2zUGjhuqduIG3hu4FtIHF14bqjbiBsw70gYsOhbiBow6BuZyAtIFNhcG8gUE9T!5e0!3m2!1svi!2sus!4v1748928093568!5m2!1svi!2sus"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.0180925891727!2d105.8696669778023!3d20.091530533203183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313663f7eaad56dd%3A0xc6e6977bc9fbf90c!2zMTQgxJAuIFRy4bqnbiBIxrBuZyDEkOG6oW8sIFAuIELhuq9jIFPGoW4sIELhu4ltIFPGoW4sIFRoYW5oIEjDs2EsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1754473309374!5m2!1svi!2s"
                                 className="w-full h-full rounded-xl"
                                 allowFullScreen=""
                                 loading="lazy"

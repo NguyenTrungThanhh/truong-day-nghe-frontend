@@ -11,10 +11,11 @@ const menuItems = [
     {
         label: 'Khóa học lái xe',
         submenu: [
-            { label: 'Học lái xe ô tô hạng B1', path: config.routes.HocLaiXeOToHangB1 },
-            { label: 'Học lái xe ô tô hạng B2', path: config.routes.HocLaiXeOToHangB2 },
-            { label: 'Học lái xe tải hạng C', path: config.routes.HocLaiXeOToHangC },
-            { label: 'Nâng hạng D lên E', path: config.routes.KhoaNangHangDLenE },
+            { label: 'Khoá học lái xe mô tô hạng A1', path: config.routes.KhoaHocLaiXeMoToHangA1 },
+            { label: 'Khóa học lái xe ô tô hạng B ( số tự động )', path: config.routes.KhoaHocLaiXeOToHangBSoTuDong },
+            { label: 'Khóa học lái xe ô tô hạng B ( số cơ khí )', path: config.routes.KhoaHocLaiXeOToHangBSoCoKhi },
+            { label: 'Khóa học lái xe ô tô hạng C1', path: config.routes.KhoaHocLaiXeOToHangC1 },
+            { label: 'Khóa học lái xe ô tô nâng hạng C', path: config.routes.KhoaHocLaiXeOToNangHangC },
         ],
     },
     { label: 'Bảng giá học phí', path: config.routes.BangGiaHocPhi },
@@ -116,7 +117,7 @@ function Header() {
                                         />
                                     </div>
                                     {isDropdownOpen && (
-                                        <div className="absolute left-0 top-full bg-white px-3 py-2 mt-2 shadow-lg border rounded-md w-64 z-20 transition duration-300">
+                                        <div className="absolute left-0 top-full bg-white px-3 py-2 mt-2 shadow-lg border rounded-md w-96 z-20 transition duration-300">
                                             {item.submenu.map((sub, subIndex) => (
                                                 <Link
                                                     to={sub.path}

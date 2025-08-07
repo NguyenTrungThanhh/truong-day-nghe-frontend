@@ -11,42 +11,145 @@ import TaiSao from '@/components/TaiSao';
 import HinhAnhTaiTrungTam from '@/components/HinhAnhTaiTrungTam';
 import config from '@/configs';
 import { assets } from '@/assets/assets';
+import ThamKhaoKhoaHoc from '@/components/ThamKhaoKhoaHoc';
 
-function KhoaNangHangDLenE() {
+function KhoaHocLaiXeOToNangHangC() {
     const swiperRef = useRef(null);
 
     useEffect(() => {
-        document.title = 'Khóa học nâng hạng D - E';
-    });
+        document.title = 'Khóa học lái xe ô tô nâng hạng C';
+    }, []);
 
     return (
         <>
             <div className="w-full bg-[#f4f4f4] py-4">
-                <div className="w-[80%] mx-auto">
+                <div className="w-[90%] lg:w-[80%] mx-auto">
                     <div className="flex items-center gap-4 text-sm font-medium">
                         <Link to={config.routes.home}>
                             <h1>Trang chủ</h1>
                         </Link>
                         <FontAwesomeIcon icon={faAngleRight} size="xs" className="mt-1" />
-                        <h1 className="text-primary-blueOne">Khóa học nâng hạng D - E</h1>
+                        <h1 className="text-primary-blueOne">Khóa học lái xe ô tô nâng hạng C</h1>
                     </div>
                 </div>
             </div>
-            <div className="w-[80%] mx-auto py-16">
-                <div className="flex justify-center items-center gap-4 mb-8">
-                    <hr className="w-[17%] border-t-[1px] border-primary-blueOne" />
-                    <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        5 sai lầm thường gặp khi học khóa nâng hạng D - E
-                    </h1>
-                    <hr className="w-[17%] border-t-[1px] border-primary-blueOne" />
+            <div className="w-full bg-primary-blueOne py-16">
+                <div className="w-[90%] lg:w-[80%] mx-auto">
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 text-center">
+                        <hr className="hidden sm:block w-[20%] border-white" />
+                        <h1 className="text-2xl font-bold text-white uppercase">
+                            Nội dung khóa học lái xe ô tô nâng hạng C
+                        </h1>
+                        <hr className="hidden sm:block w-[20%] border-white" />
+                    </div>
+                    <p className="text-center text-white mb-8 px-2">
+                        Giáo trình bám sát nội dung sát hạch nâng hạng C, nhằm đảm bảo tỉ lệ đạt cao nhất.
+                    </p>
+
+                    <div className="bg-white p-4 sm:p-6 rounded-lg space-y-8">
+                        {/* PHẦN 1: B2 nâng hạng lên C */}
+                        <div>
+                            <h2 className="text-primary-blueOne text-xl sm:text-2xl font-bold uppercase mb-4 sm:mb-6">
+                                🚛 B nâng hạng lên C
+                            </h2>
+                            <p className="mb-4 text-sm sm:text-base">
+                                Dành cho người đã có bằng B tối thiểu 3 năm. Tổng thời gian học khoảng 2 tháng, lý
+                                thuyết rút gọn, thực hành tăng cường trên xe tải tải trọng lớn.
+                            </p>
+
+                            <h3 className="text-primary-blueOne text-base sm:text-xl font-semibold mt-4 mb-2 uppercase">
+                                📄 Điều kiện
+                            </h3>
+                            <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-base">
+                                <li>Đã có GPLX B2 tối thiểu 3 năm.</li>
+                                <li>Không bị tước quyền sử dụng GPLX tại thời điểm nộp hồ sơ.</li>
+                                <li>Giấy khám sức khỏe theo mẫu.</li>
+                            </ul>
+
+                            <h3 className="text-primary-blueOne text-base sm:text-xl font-semibold mt-6 mb-2 uppercase">
+                                🚘 Thực hành
+                            </h3>
+                            <p className="text-sm sm:text-base">
+                                Lái xe nâng hạng tập trung vào kỹ năng điều khiển xe tải lớn, gồm:
+                            </p>
+                            <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-base">
+                                <li>Khoảng 20 giờ thực hành trên xe tải &gt; 3,5 tấn.</li>
+                                <li>Ôn tập các bài thi sa hình và đường trường.</li>
+                            </ul>
+
+                            <h3 className="text-primary-blueOne text-base sm:text-xl font-semibold mt-6 mb-2 uppercase">
+                                ⏱️ Thời gian đào tạo
+                            </h3>
+                            <p className="text-sm sm:text-base">
+                                Khoảng 1.5 – 2 tháng, linh hoạt theo thời gian học viên.
+                            </p>
+                        </div>
+
+                        <hr className="border-t-2 border-dashed border-gray-300" />
+
+                        {/* PHẦN 2: C1 nâng hạng lên C */}
+                        <div>
+                            <h2 className="text-primary-blueOne text-xl sm:text-2xl font-bold uppercase mb-4 sm:mb-6">
+                                🚚 C1 nâng hạng lên C
+                            </h2>
+                            <p className="mb-4 text-sm sm:text-base">
+                                Dành cho người đã có bằng C1, muốn nâng hạng lên C để điều khiển xe tải trên 3.5 tấn.
+                                Chương trình học lý thuyết và thực hành bổ sung.
+                            </p>
+
+                            <h3 className="text-primary-blueOne text-base sm:text-xl font-semibold mt-4 mb-2 uppercase">
+                                📄 Điều kiện
+                            </h3>
+                            <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-base">
+                                <li>Đã có GPLX C1 tối thiểu 1 năm.</li>
+                                <li>Không bị tước quyền sử dụng GPLX tại thời điểm nộp hồ sơ.</li>
+                                <li>Giấy khám sức khỏe theo mẫu.</li>
+                            </ul>
+
+                            <h3 className="text-primary-blueOne text-base sm:text-xl font-semibold mt-6 mb-2 uppercase">
+                                🚘 Thực hành
+                            </h3>
+                            <p className="text-sm sm:text-base">Lái xe trên xe tải nặng và cabin mô phỏng:</p>
+                            <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-base">
+                                <li>Tổng thời gian khoảng 30 giờ thực hành.</li>
+                                <li>Tập trung thao tác lái xe nặng và xử lý tình huống.</li>
+                            </ul>
+
+                            <h3 className="text-primary-blueOne text-base sm:text-xl font-semibold mt-6 mb-2 uppercase">
+                                ⏱️ Thời gian đào tạo
+                            </h3>
+                            <p className="text-sm sm:text-base">Khoảng 1.5 tháng tùy lịch học và sát hạch.</p>
+                        </div>
+
+                        {/* Địa điểm & liên hệ dùng chung */}
+                        <div>
+                            <h3 className="text-primary-blueOne text-base sm:text-xl font-semibold mt-8 mb-2 uppercase">
+                                📍 Địa điểm & hỗ trợ
+                            </h3>
+                            <p className="text-sm sm:text-base">
+                                Học tại Trung tâm Đào tạo Lái xe – Công ty Cổ phần Vận tải Ô tô số 4. Liên hệ:{' '}
+                                <span className="font-semibold">02373.824.988</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex gap-4">
-                    <div className="w-1/2">
+            </div>
+
+            <div className="w-[90%] lg:w-[80%] mx-auto py-16">
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 text-center">
+                    <hr className="hidden lg:block w-[17%] border-t-[1px] border-primary-blueOne" />
+                    <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
+                        5 sai lầm thường gặp khi học lái xe ô tô nâng hạng C
+                    </h1>
+                    <hr className="hidden lg:block w-[17%] border-t-[1px] border-primary-blueOne" />
+                </div>
+                <div className="flex flex-col lg:flex-row gap-4">
+                    <div className="w-full lg:w-1/2">
                         <div>
                             <img src={assets.gioiThieu} alt="" className="rounded-lg" />
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full lg:w-1/2">
                         <ol className="list-decimal pl-4">
                             <li className="font-semibold my-4">
                                 Không chăm chỉ học thực hành nên không có đủ trải nghiệm kiến thức thực tế. Quá bận rộn
@@ -74,20 +177,21 @@ function KhoaNangHangDLenE() {
                 </div>
             </div>
             <div className="w-full bg-primary-blueOne py-16">
-                <div className="w-[80%] mx-auto">
-                    <div className="flex justify-center items-center gap-4 mb-8">
-                        <hr className="w-[15%]" />
-                        <h1 className="text-2xl font-bold text-white uppercase">
-                            Khóa nâng hạng D - E tại LOD có những ưu điểm gì
+                <div className="w-[90%] lg:w-[80%] mx-auto">
+                    <div className="flex justify-center items-center gap-4 mb-16">
+                        <hr className="hidden lg:block w-[15%]" />
+                        <h1 className="text-2xl font-bold text-white uppercase text-center">
+                            Ưu điểm khi học lái xe ô tô nâng hạng C tại Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận
+                            tải Ô tô số 4
                         </h1>
-                        <hr className="w-[15%]" />
+                        <hr className="hidden lg:block w-[15%]" />
                     </div>
-                    <div className="flex items-center gap-4">
-                        <div className="w-1/2">
+                    <div className="flex flex-col lg:flex-row items-center gap-8">
+                        <div className="w-full lg:w-1/2">
                             <div className="flex flex-col gap-4 text-white">
                                 <h1 className="text-xl font-bold uppercase">Đưa chương trình thi vào đào tạo</h1>
                                 <p>
-                                    LOD là trung tâm đầu tiên có phương pháp giảng dạy trực quan thông qua nội dung tưng
+                                    LOD là trung tâm đầu tiên có phương pháp giảng dạy trực quan thông qua nội dung từng
                                     bài thi. Học viên học trên xe tập lái như học trên xe thi – Là đơn vị có tỷ lệ đỗ
                                     cao nhất tại Hà Nội.
                                 </p>
@@ -98,12 +202,13 @@ function KhoaNangHangDLenE() {
                                 </p>
                                 <h1 className="text-xl font-bold uppercase">Không chỉ là học để thi</h1>
                                 <p>
-                                    Ngoài nội dung đào tạo chuyên sâu bám sát nội dung 11 bài thi. Trung tâm LOD còn
-                                    hướng bạn tới những kỹ năng lái tốt và am hiểu luật khi tham gia giao thông.
+                                    Ngoài nội dung đào tạo chuyên sâu bám sát nội dung 11 bài thi, Trung tâm Đào tạo Lái
+                                    xe - Công ty Cổ phần Vận tải Ô tô số 4 còn hướng bạn tới những kỹ năng lái tốt và am
+                                    hiểu luật khi tham gia giao thông.
                                 </p>
                             </div>
                         </div>
-                        <div className="w-1/2">
+                        <div className="w-full lg:w-1/2">
                             <div>
                                 <img src={assets.gioiThieu} alt="" className="rounded-lg" />
                             </div>
@@ -111,125 +216,128 @@ function KhoaNangHangDLenE() {
                     </div>
                 </div>
             </div>
+
             <TaiSao />
+
             <div className="w-full bg-primary-blueOne py-16">
-                <div className="w-[80%] mx-auto">
-                    <div className="flex justify-center items-center gap-4 mb-8">
-                        <hr className="w-[19%]" />
-                        <h1 className="text-2xl font-bold text-white uppercase">
-                            Nội dung khóa học nâng hạng D - E tại LOD
+                <div className="w-[90%] lg:w-[80%] mx-auto">
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 text-center">
+                        <hr className="hidden sm:block w-[19%] border-white" />
+                        <h1 className="text-2xl font-bold text-white uppercase text-center">
+                            Nội dung khóa học lái xe ô tô nâng hạng C tại Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận
+                            tải Ô tô số 4
                         </h1>
-                        <hr className="w-[19%]" />
+                        <hr className="hidden sm:block w-[19%] border-white" />
                     </div>
-                    <p className="text-center text-white mb-8">
-                        Giáo trình giảng dạy bám sát nội dung 11 bài thi lái xe Ô tô hạng C với mong muốn học viên đạt
+                    <p className="text-center text-white mb-8 px-2">
+                        Giáo trình giảng dạy bám sát nội dung 11 bài thi lái xe Ô tô hạng C1 với mong muốn học viên đạt
                         tỷ lệ đỗ cao nhất.
                     </p>
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 1: Xuất phát
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là khi xuất phát phải bật đèn xi – nhan trái (với ý nghĩa là xe
                                 chuẩn bị đi ra làn đường bên ngoài).
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 2: Dừng xe, nhường đường cho người đi bộ
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là dừng xe đúng chỗ trước vạch trắng và đường vằn dành cho người đi
                                 bộ
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 3: Dừng và khởi hành xe ngang dốc
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là xe không vượt quá vạch quy định, không bị tuột dốc quá 50 cm,
                                 phải vượt khỏi dốc trong khoảng thời gian 30 giây.
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 4: vệt bánh xe và đường hẹp vuông góc
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là hai bánh xe bên phải phải đi lọt qua một đoạn đường có bề rộng
                                 khoảng 30-35 cm; Cho xe đi không bị chạm vạch ở gần vỉa hè hai bên đường.
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 5: qua ngã tư
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Cũng giống như ở ngoài đường, tại ngã tư này có đèn tín hiệu và bạn chỉ được cho xe qua
                                 ngã tư khi có đèn xanh
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 6: đường vòng quanh co
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là khi cho xe đi hình chữ S không bị chạm vạch ở gần vỉa hè hai bên
                                 đường.
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 7: ghép xe dọc vào nơi đỗ
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là trong vòng 2 phút bạn phải cho xe lùi được vào nơi đỗ (chuồng),
                                 không chạm vạch và tiến ra khỏi chuồng.
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 8: tạm dừng ở chỗ có đường sắt chạy qua
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là dừng xe đúng chỗ trước vạch trắng và đường vằn dành cho người đi
                                 bộ trước đường sắt.
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 9: thay đổi số trên đường bằng
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là phải lên được số 2 và đạt tốc độ trên 20 km/h trước biển báo 20
                                 màu xanh; Về số 1 và giảm tốc độ xuống dưới 20 km/h trước biển báo 20 màu trắng.
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 10: ghép xe ngang vào nơi đỗ
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Yêu cầu của bài này là lùi xe vào nơi cần đỗ khi 2 đầu và 1 mặt bên đều bị khóa bởi vật
                                 cản hoặc với những xe khác
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Bài 11: KẾT THÚC
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Để kết thúc bài, bạn bật đèn xi-nhan phải khi lái xe qua vạch kết thúc. Bạn không bật
                                 đèn xi – nhan sẽ bị trừ 5 điểm.
                             </p>
                         </div>
                         <div className="bg-white p-3 rounded-lg">
-                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2">
+                            <h1 className="text-primary-blueOne font-bold uppercase border-b border-primary-blueOne pb-2 text-sm sm:text-base">
                                 Học lý thuyết
                             </h1>
-                            <p className="mt-2">
+                            <p className="mt-2 text-sm sm:text-base">
                                 Học viên học giáo trình chuẩn 5 môn, do Tổng cục Đường bộ Việt Nam ban hành. Được đào
                                 tạo bởi giáo viên có kinh nghiệm, kiến thức chuyên sâu.
                             </p>
@@ -237,21 +345,22 @@ function KhoaNangHangDLenE() {
                     </div>
                 </div>
             </div>
-            <div className="w-[80%] mx-auto py-16">
-                <div className="flex justify-center items-center gap-4 mb-8">
-                    <hr className="w-[16%] border-t-[1px] border-primary-blueOne" />
+
+            <div className="w-[90%] lg:w-[80%] mx-auto py-16">
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 text-center">
+                    <hr className="hidden lg:block w-[18%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        Đăng ký khu vực học nâng hạng D - E gần nhất
+                        Đăng ký khu vực học lái xe ô tô nâng hạng C gần nhất
                     </h1>
-                    <hr className="w-[16%] border-t-[1px] border-primary-blueOne" />
+                    <hr className="hidden lg:block w-[18%] border-t-[1px] border-primary-blueOne" />
                 </div>
-                <div className="flex gap-4">
-                    <div className="w-1/2">
+                <div className="flex flex-col lg:flex-row gap-4">
+                    <div className="w-full lg:w-1/2">
                         <div>
                             <img src={assets.gioiThieu} alt="" className="rounded-lg w-full h-64 object-cover" />
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full lg:w-1/2">
                         <ol className="list-decimal pl-4">
                             <li className="font-semibold my-4">Sân Thành Đô - Nhổn</li>
                             <li className="font-semibold my-4">Sân Hồng Anh - Ngõ 785 Nguyễn Khoái</li>
@@ -263,18 +372,19 @@ function KhoaNangHangDLenE() {
                 </div>
             </div>
             <div className="w-full bg-primary-blueOne py-16">
-                <div className="w-[80%] mx-auto">
-                    <div className="flex justify-center items-center gap-4 mb-8">
-                        <hr className="w-[39%]" />
+                <div className="w-[90%] lg:w-[80%] mx-auto">
+                    <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mb-8 text-center">
+                        <hr className="hidden lg:block w-[39%] border-white" />
                         <h1 className="text-2xl font-bold text-white uppercase">Đội ngũ giáo viên</h1>
-                        <hr className="w-[39%]" />
+                        <hr className="hidden lg:block w-[39%] border-white" />
                     </div>
-                    <div className="flex items-center gap-4">
-                        <div className="w-1/2">
+
+                    <div className="flex flex-col lg:flex-row items-center gap-8">
+                        <div className="w-full lg:w-1/2">
                             <div className="flex flex-col gap-4 bg-white p-4 rounded-lg">
                                 <h1 className="text-primary-blueOne text-lg font-bold uppercase text-center border-b border-primary-blueOne pb-4">
-                                    Hơn 200 giáo viên đạt tiêu chuẩn giáo viên dạy <br /> giỏi do Tổng Cục Đường Bộ tổ
-                                    chức thi hàng năm
+                                    Hơn 200 giáo viên đạt tiêu chuẩn giáo viên dạy <br className="hidden sm:block" />
+                                    giỏi do Tổng Cục Đường Bộ tổ chức thi hàng năm
                                 </h1>
                                 <div className="mt-2 flex flex-col gap-2">
                                     <p>
@@ -306,59 +416,68 @@ function KhoaNangHangDLenE() {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-1/2">
+
+                        <div className="w-full lg:w-1/2">
                             <div>
-                                <img src={assets.gioiThieu} alt="" className="rounded-lg w-full h-[340px]" />
+                                <img
+                                    src={assets.gioiThieu}
+                                    alt=""
+                                    className="rounded-lg w-full h-52 sm:h-64 md:h-72 lg:h-[340px] object-cover"
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="w-[80%] mx-auto py-16">
+            <div className="w-[90%] lg:w-[80%] mx-auto py-16">
                 <div className="flex justify-center items-center gap-4 mb-8">
-                    <hr className="w-[22%] border-t-[1px] border-primary-blueOne" />
-                    <h1 className="text-2xl font-bold text-primary-blueOne uppercase">
-                        Lợi ích sau khóa học nâng hạng D - E
+                    <hr className="hidden lg:block w-[26%] border-t-[1px] border-primary-blueOne" />
+                    <h1 className="text-2xl font-bold text-primary-blueOne uppercase text-center">
+                        Lợi ích sau khóa học lái xe ô tô nâng hạng C
                     </h1>
-                    <hr className="w-[22%] border-t-[1px] border-primary-blueOne" />
+                    <hr className="hidden lg:block w-[26%] border-t-[1px] border-primary-blueOne" />
                 </div>
-                <div className="grid grid-cols-2 gap-8">
-                    <div className="bg-primary-blueOne p-4 rounded-lg min-h-[72px] flex items-center">
-                        <h1 className="text-white font-medium">1. Thi đỗ và có bằng lái xe sau gần 3 tháng học tập.</h1>
-                    </div>
-                    <div className="bg-primary-blueOne p-4 rounded-lg min-h-[72px] flex items-center">
-                        <h1 className="text-white font-medium">2. Nắm vững các kiến thức luật Giao thông Đường bộ.</h1>
-                    </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="bg-primary-blueOne p-4 rounded-lg min-h-[72px] flex items-center">
                         <h1 className="text-white font-medium">
-                            3. Lái xe tốt, an toàn khi tham gia giao thông mà không cần bổ túc tay lái sau khóa học.
+                            1. Được đào tạo theo đúng chương trình chuẩn của Bộ GTVT.
                         </h1>
                     </div>
                     <div className="bg-primary-blueOne p-4 rounded-lg min-h-[72px] flex items-center">
                         <h1 className="text-white font-medium">
-                            4. Nắm cơ bản cơ chế hoạt động, cấu tạo của Ô tô đề phòng những tình huống khi lái xe trên
-                            đường.
+                            2. Nắm vững kiến thức luật giao thông đường bộ cho người điều khiển xe mô tô.
                         </h1>
                     </div>
                     <div className="bg-primary-blueOne p-4 rounded-lg min-h-[72px] flex items-center">
                         <h1 className="text-white font-medium">
-                            5. Nắm vững nội dung học và thi. Học viên có thể hướng dẫn kiến thức cơ bản khi thi cho bạn
-                            bè.
+                            3. Biết cách điều khiển xe mô tô an toàn trong nhiều tình huống thực tế.
                         </h1>
                     </div>
                     <div className="bg-primary-blueOne p-4 rounded-lg min-h-[72px] flex items-center">
                         <h1 className="text-white font-medium">
-                            6. Ngoài ra LOD còn hỗ trợ tất cả các học viên mọi vấn đề sau khi kết thúc khóa học.
+                            4. Được làm quen với các bài thi thực hành trên sân sát hạch tiêu chuẩn.
+                        </h1>
+                    </div>
+                    <div className="bg-primary-blueOne p-4 rounded-lg min-h-[72px] flex items-center">
+                        <h1 className="text-white font-medium">
+                            5. Tự tin tham gia kỳ thi sát hạch và dễ dàng đạt kết quả tốt.
+                        </h1>
+                    </div>
+                    <div className="bg-primary-blueOne p-4 rounded-lg min-h-[72px] flex items-center">
+                        <h1 className="text-white font-medium">
+                            6. Được hỗ trợ tư vấn, giải đáp tận tình từ Trung tâm Đào tạo Lái xe - Công ty CP Vận tải Ô
+                            tô số 4.
                         </h1>
                     </div>
                 </div>
             </div>
+
             <div className="w-full bg-primary-blueOne py-16">
-                <div className="w-[80%] mx-auto">
+                <div className="w-[90%] lg:w-[80%] mx-auto">
                     <div className="flex justify-center items-center gap-4 mb-8">
-                        <hr className="w-[35%]" />
-                        <h1 className="text-2xl font-bold text-white uppercase">Cảm nhận của học viên</h1>
-                        <hr className="w-[35%]" />
+                        <hr className="hidden lg:block w-[35%] border-white" />
+                        <h1 className="text-2xl font-bold text-white uppercase text-center">Cảm nhận của học viên</h1>
+                        <hr className="hidden lg:block w-[35%] border-white" />
                     </div>
                     <div className="relative">
                         <Swiper
@@ -369,7 +488,7 @@ function KhoaNangHangDLenE() {
                             className="relative z-0 h-full"
                         >
                             <SwiperSlide>
-                                <div className="bg-white rounded-xl shadow-lg p-20 text-center flex items-center justify-center gap-4">
+                                <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
                                     <div className="w-64 flex justify-center">
                                         <img
                                             src={assets.nguyenDoanhChinh}
@@ -380,8 +499,8 @@ function KhoaNangHangDLenE() {
                                         <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
                                         <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
                                             Tôi là Nhà Báo, công việc của tôi rất bận rộn nên việc xếp lịch học vô cùng
-                                            khó khăn. Các thầy ở trung tâm “Chiều” tôi hết mức. Cảm ơn thầy Đỉnh, Cảm ơn
-                                            Trung tâm đào tạo lái xe LOD
+                                            khó khăn. Các thầy ở trung tâm “chiều” tôi hết mức. Cảm ơn thầy Đỉnh, cảm ơn
+                                            Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4
                                         </p>
                                         <p className="font-bold text-[#222]">
                                             Nguyễn Doanh Chính{' '}
@@ -391,7 +510,7 @@ function KhoaNangHangDLenE() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="bg-white rounded-xl shadow-lg p-20 text-center flex items-center justify-center gap-4">
+                                <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
                                     <div className="w-64 flex justify-center">
                                         <img
                                             src={assets.nguyenDoanhChinh}
@@ -402,30 +521,8 @@ function KhoaNangHangDLenE() {
                                         <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
                                         <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
                                             Tôi là Nhà Báo, công việc của tôi rất bận rộn nên việc xếp lịch học vô cùng
-                                            khó khăn. Các thầy ở trung tâm “Chiều” tôi hết mức. Cảm ơn thầy Đỉnh, Cảm ơn
-                                            Trung tâm đào tạo lái xe LOD
-                                        </p>
-                                        <p className="font-bold text-[#222]">
-                                            Nguyễn Doanh Chính{' '}
-                                            <span className="font-normal text-sm text-gray-600">/ Nhà báo</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="bg-white rounded-xl shadow-lg p-20 text-center flex items-center justify-center gap-4">
-                                    <div className="w-64 flex justify-center">
-                                        <img
-                                            src={assets.nguyenDoanhChinh}
-                                            className="w-40 h-w-40 object-cover rounded-full border-4 border-white shadow-md"
-                                        />
-                                    </div>
-                                    <div className="flex-1 flex flex-col items-center gap-3">
-                                        <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
-                                        <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
-                                            Tôi là Nhà Báo, công việc của tôi rất bận rộn nên việc xếp lịch học vô cùng
-                                            khó khăn. Các thầy ở trung tâm “Chiều” tôi hết mức. Cảm ơn thầy Đỉnh, Cảm ơn
-                                            Trung tâm đào tạo lái xe LOD
+                                            khó khăn. Các thầy ở trung tâm “chiều” tôi hết mức. Cảm ơn thầy Đỉnh, cảm ơn
+                                            Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4
                                         </p>
                                         <p className="font-bold text-[#222]">
                                             Nguyễn Doanh Chính{' '}
@@ -455,120 +552,9 @@ function KhoaNangHangDLenE() {
                 </div>
             </div>
             <HinhAnhTaiTrungTam />
-            <div className="w-full bg-primary-blueOne py-16">
-                <div className="w-[80%] mx-auto">
-                    <div className="flex justify-center items-center gap-4 mb-16">
-                        <hr className="w-[25%]" />
-                        <h1 className="text-2xl font-bold text-white uppercase">
-                            Tham khảo thêm khóa học lái xe các hạng
-                        </h1>
-                        <hr className="w-[25%]" />
-                    </div>
-                    <div className="grid grid-cols-3 gap-8">
-                        <div>
-                            <div className="p-[10px] bg-white rounded-t-lg">
-                                <h1 className="text-2xl font-bold uppercase text-center text-primary-blueOne">
-                                    Khóa học hạng B1
-                                </h1>
-                            </div>
-                            <img src={assets.khoaHocB1} alt="" className="w-full h-52 object-cover" />
-                            <div className="p-3 flex flex-col gap-2 bg-white rounded-b-lg">
-                                <p>
-                                    Ưu đãi: <span className="text-primary-blueOne">Giảm 500k</span> khi đăng ký online
-                                </p>
-                                <p>Đăng ký chỉ cần CMT</p>
-                                <p>
-                                    Học phí: <span className="text-primary-blueOne">trọn gói 100%</span>
-                                </p>
-                                <p>Học 1 thầy 1 trò</p>
-                                <p>Học gần nhà, thời gian linh hoạt</p>
-                                <p>Thời gian đào tạo và thi: 2.5 tháng</p>
-                                <p className="font-bold text-primary-blueOne">Đăng ký khóa B1 chỉ 17 triệu</p>
-                                <p>Giảm 100k/HV khi đăng ký nhóm</p>
-                                <p>Có chương trình nâng cao</p>
-                                <p className="text-center">
-                                    Cam kết <b className="text-primary-blueOne">KHÔNG</b> phát sinh thêm chi phí
-                                </p>
-                                <div className="flex justify-center border-t pt-4">
-                                    <Link to={config.routes.HocLaiXeOToHangB1} className="w-full">
-                                        <button className="bg-primary-blueOne text-white font-bold uppercase w-full px-6 py-2 rounded-full hover:bg-primary-blueTwo duration-300">
-                                            Chi tiết
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="p-[10px] bg-white rounded-t-lg">
-                                <h1 className="text-2xl font-bold uppercase text-center text-primary-blueOne">
-                                    Khóa học hạng C
-                                </h1>
-                            </div>
-                            <img src={assets.khoaHocC} alt="" className="w-full h-52 object-cover" />
-                            <div className="p-3 flex flex-col gap-2 bg-white rounded-b-lg">
-                                <p>
-                                    Ưu đãi: <span className="text-primary-blueOne">Giảm 500k</span> khi đăng ký online
-                                </p>
-                                <p>Đăng ký chỉ cần CMT</p>
-                                <p>
-                                    Học phí: <span className="text-primary-blueOne">trọn gói 100%</span>
-                                </p>
-                                <p>Học 1 thầy 1 trò</p>
-                                <p>Học gần nhà, thời gian linh hoạt</p>
-                                <p>Thời gian đào tạo và thi: 3.0 tháng</p>
-                                <p className="font-bold text-primary-blueOne">Đăng ký khóa C chỉ 16 triệu</p>
-                                <p>Giảm 100k/HV khi đăng ký nhóm</p>
-                                <p>Có chương trình nâng cao</p>
-                                <p className="text-center">
-                                    Cam kết <b className="text-primary-blueOne">KHÔNG</b> phát sinh thêm chi phí
-                                </p>
-                                <div className="flex justify-center border-t pt-4">
-                                    <Link to={config.routes.HocLaiXeOToHangC} className="w-full">
-                                        <button className="bg-primary-blueOne text-white font-bold uppercase w-full px-6 py-2 rounded-full hover:bg-primary-blueTwo duration-300">
-                                            Chi tiết
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="p-[10px] bg-white rounded-t-lg">
-                                <h1 className="text-2xl font-bold uppercase text-center text-primary-blueOne">
-                                    Khóa học hạng C
-                                </h1>
-                            </div>
-                            <img src={assets.khoaHocC} alt="" className="w-full h-52 object-cover" />
-                            <div className="p-3 flex flex-col gap-2 bg-white rounded-b-lg">
-                                <p>
-                                    Ưu đãi: <span className="text-primary-blueOne">Giảm 500k</span> khi đăng ký online
-                                </p>
-                                <p>Đăng ký chỉ cần CMT</p>
-                                <p>
-                                    Học phí: <span className="text-primary-blueOne">trọn gói 100%</span>
-                                </p>
-                                <p>Học 1 thầy 1 trò</p>
-                                <p>Học gần nhà, thời gian linh hoạt</p>
-                                <p>Thời gian đào tạo và thi: 5.0 tháng</p>
-                                <p className="font-bold text-primary-blueOne">Đăng ký khóa C chỉ 19.8 triệu</p>
-                                <p>Giảm 100k/HV khi đăng ký nhóm</p>
-                                <p>Có chương trình nâng cao</p>
-                                <p className="text-center">
-                                    Cam kết <b className="text-primary-blueOne">KHÔNG</b> phát sinh thêm chi phí
-                                </p>
-                                <div className="flex justify-center border-t pt-4">
-                                    <Link to={config.routes.HocLaiXeOToHangC} className="w-full">
-                                        <button className="bg-primary-blueOne text-white font-bold uppercase w-full px-6 py-2 rounded-full hover:bg-primary-blueTwo duration-300">
-                                            Chi tiết
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ThamKhaoKhoaHoc />
         </>
     );
 }
 
-export default KhoaNangHangDLenE;
+export default KhoaHocLaiXeOToNangHangC;

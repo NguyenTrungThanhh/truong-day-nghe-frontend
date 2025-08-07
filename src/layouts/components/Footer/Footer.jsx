@@ -295,7 +295,8 @@ function Footer() {
             <div className="bg-primary-blueOne border-t border-[#8b7be6] py-6">
                 <div className="w-[78%] mx-auto flex justify-center items-center">
                     <h1 className="text-sm text-[#ddd] font-medium text-center">
-                        Copyright © 2025 Real Logistics Co., Ltd. All Rights Reserved
+                        Bản quyền © 2025 Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4. Đã đăng ký bản
+                        quyền.
                     </h1>
                 </div>
             </div>
