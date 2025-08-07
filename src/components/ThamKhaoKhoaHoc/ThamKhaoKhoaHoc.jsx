@@ -60,8 +60,8 @@ const ThamKhaoKhoaHoc = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {filteredCourses.map((course, index) => (
                         <div key={index}>
-                            <div className="p-[10px] bg-white rounded-t-lg">
-                                <h1 className="text-2xl font-bold uppercase text-center text-primary-blueOne">
+                            <div className="p-[10px] bg-white rounded-t-lg h-[80px] flex items-center justify-center text-center">
+                                <h1 className="text-[16px] sm:text-[18px] md:text-[20px] font-bold uppercase text-primary-blueOne leading-tight">
                                     {course.name}
                                 </h1>
                             </div>
