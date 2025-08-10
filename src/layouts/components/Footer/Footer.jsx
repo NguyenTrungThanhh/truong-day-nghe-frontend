@@ -84,7 +84,7 @@ function Footer() {
                         transition-transform duration-300 pointer-events-auto"
                     >
                         <div className="px-4 py-3">
-                            <a href="tel:19006750" className="group flex items-center gap-4">
+                            <a href="tel:02373824988" className="group flex items-center gap-4">
                                 <div className="w-8 h-8 bg-[#e8434c] flex items-center justify-center rounded-full">
                                     <FontAwesomeIcon icon={faPhone} className="text-white" />
                                 </div>
@@ -94,17 +94,19 @@ function Footer() {
                             </a>
                         </div>
                         <div className="px-4 py-3 flex items-center gap-4 border-y-[1px] border-[#ecedf1] shadow-[0_1px_0_0_#fff,_0_-1px_0_0_#fff]">
-                            <Link className="group flex items-center gap-4">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61558417543410"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-4"
+                            >
                                 <div className="w-8 h-8 bg-[#3985f7] flex items-center justify-center rounded-full">
                                     <img src={assets.iconZalo} alt="" className="w-5 h-5" />
                                 </div>
-                                <p
-                                    className="text-[13px] text-black flex-1 group-hover:text-primary-blueOne"
-                                    onClick={() => window.open('https://zalo.me/19006750', '_blank')}
-                                >
-                                    Chat với chúng tôi qua Zalo
+                                <p className="text-[13px] text-black flex-1 group-hover:text-primary-blueOne">
+                                    Chat với chúng tôi qua Facebook
                                 </p>
-                            </Link>
+                            </a>
                         </div>
                         <div className="px-4 py-3">
                             <Link className="group flex items-center gap-4">
@@ -172,7 +174,7 @@ function Footer() {
             {/* Footer content */}
             <div className="bg-primary-blueOne">
                 <div className="w-[90%] lg:w-[80%] mx-auto">
-                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-44 pt-10 pb-8">
+                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-32 pt-10 pb-8">
                         <div className="flex flex-col gap-4 lg:w-1/3 w-full">
                             <div>
                                 <img src={assets.logo} alt="" className="w-40" />
@@ -214,7 +216,7 @@ function Footer() {
                                 </a>
                             </div>
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-10 sm:gap-32 mt-10 lg:mt-20 lg:ml-auto lg:w-2/3">
+                        <div className="flex flex-col sm:flex-row gap-10 sm:gap-28 mt-10 lg:mt-20 lg:ml-auto lg:w-2/3">
                             <div>
                                 <h1 className="text-lg font-bold text-white mb-8">Về chúng tôi</h1>
                                 <ul className="text-sm">
@@ -231,30 +233,37 @@ function Footer() {
                                 <h1 className="text-lg font-bold text-white mb-8">Khóa học lái xe</h1>
                                 <ul className="text-sm">
                                     <li>
-                                        <Link to={config.routes.HocLaiXeOToHangB1}>
+                                        <Link to={config.routes.KhoaHocLaiXeMoToHangA1}>
                                             <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
-                                                Học lái xe ô tô hạng B1
+                                                Khoá học lái xe mô tô hạng A1
                                             </p>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={config.routes.HocLaiXeOToHangB2}>
+                                        <Link to={config.routes.KhoaHocLaiXeOToHangBSoTuDong}>
                                             <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
-                                                Học lái xe ô tô hạng B2
+                                                Khóa học lái xe ô tô hạng B ( số tự động )
                                             </p>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={config.routes.HocLaiXeOToHangC}>
+                                        <Link to={config.routes.KhoaHocLaiXeOToHangBSoCoKhi}>
                                             <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
-                                                Học lái xe tải hạng C
+                                                Khóa học lái xe ô tô hạng B ( số cơ khí )
                                             </p>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={config.routes.KhoaNangHangDLenE}>
+                                        <Link to={config.routes.KhoaHocLaiXeOToHangC1}>
                                             <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
-                                                Nâng hạng D lên E
+                                                Khóa học lái xe ô tô hạng C1
+                                            </p>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to={config.routes.KhoaHocLaiXeOToNangHangC}>
+                                            <p className="text-[#ddd] font-medium mb-4 hover:text-primary-blueTwo duration-300">
+                                                Khóa học lái xe ô tô nâng hạng C
                                             </p>
                                         </Link>
                                     </li>

@@ -145,26 +145,18 @@ function BangGiaHocPhi() {
                                         <h2 className="text-lg font-bold mb-4 text-center">Bạn muốn làm gì?</h2>
                                         <div className="flex flex-col gap-3">
                                             <a
-                                                href="https://datxere.vn/?p=81259&auto=1&dichvu=xgh"
+                                                href="https://www.facebook.com/profile.php?id=61558417543410"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="bg-primary-blueOne text-white py-2 px-4 rounded text-center hover:opacity-90"
                                             >
-                                                Đăng ký qua fanpage
+                                                Đăng ký qua Fanpage
                                             </a>
                                             <a
-                                                href="https://datxere.vn/?p=81259&auto=1&dichvu=xgh"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
+                                                href="tel:02373824988"
                                                 className="bg-primary-blueOne text-white py-2 px-4 rounded text-center hover:opacity-90"
                                             >
-                                                Đăng ký qua fanpage
-                                            </a>
-                                            <a
-                                                href="tel:19008638"
-                                                className="bg-primary-blueOne text-white py-2 px-4 rounded text-center hover:opacity-90"
-                                            >
-                                                Gọi trực tiếp 1900 8638
+                                                Gọi trực tiếp 0237 3824 988
                                             </a>
                                             <button
                                                 onClick={() => setShowModal(false)}

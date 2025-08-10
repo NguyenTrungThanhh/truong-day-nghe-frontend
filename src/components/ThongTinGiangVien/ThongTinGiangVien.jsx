@@ -28,12 +28,8 @@ function ThongTinGiangVien() {
                             <hr className="border-t-[1px] border-primary-blueOne" />
                             <div className="mt-4 flex flex-col gap-2 text-sm sm:text-base">
                                 <p>
-                                    <span className="font-bold text-primary-blueOne">Độ tuổi: </span>Đội ngũ giáo viên
-                                    trẻ, nhiệt huyết, yêu nghề.
-                                </p>
-                                <p>
-                                    <span className="font-bold text-primary-blueOne">Trình độ văn hóa: </span>Đa phần
-                                    giáo viên đạt trình độ văn hóa Cao đẳng trở lên.
+                                    <span className="font-bold text-primary-blueOne">Trình độ văn hóa: </span>Đội ngũ
+                                    giáo viên đạt trình độ văn hóa cao đẳng trở lên.
                                 </p>
                                 <p>
                                     <span className="font-bold text-primary-blueOne">Kinh nghiệm nghề nghiệp: </span>Tối

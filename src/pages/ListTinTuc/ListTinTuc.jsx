@@ -6,7 +6,7 @@ function ListTinTuc() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        document.title = 'Danh sách tin tức HKA POST & GO';
+        document.title = 'Danh sách tin tức';
     }, []);
 
     const fetchProducts = async () => {

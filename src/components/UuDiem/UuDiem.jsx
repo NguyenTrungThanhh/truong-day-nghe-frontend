@@ -7,7 +7,8 @@ function UuDiem() {
                 <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mb-6 text-center">
                     <hr className="hidden lg:block w-[40%] lg:w-[24%] border-white" />
                     <h1 className="text-2xl font-bold text-white uppercase">
-                        Đào tạo lái xe ô tô Lod có những ưu điểm gì
+                        Đào tạo lái xe ô tô Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4 có những ưu
+                        điểm gì
                     </h1>
                     <hr className="hidden lg:block w-[40%] lg:w-[24%] border-white" />
                 </div>
@@ -21,25 +22,24 @@ function UuDiem() {
                                     Đưa chương trình thi vào đào tạo
                                 </h1>
                                 <p className="text-white text-justify">
-                                    LOD là trung tâm đầu tiên có phương pháp giảng dạy trực quan thông qua nội dung tưng
-                                    bài thi. Học viên học trên xe tập lái như học trên xe thi –{' '}
+                                    Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4 là đơn vị đầu tiên có
+                                    phương pháp giảng dạy trực quan thông qua nội dung từng bài thi. Học viên học trên
+                                    xe tập lái như học trên xe thi –{' '}
                                     <span className="font-semibold">Là đơn vị có tỷ lệ đỗ cao nhất tại Hà Nội.</span>
                                 </p>
                             </div>
                             <div>
                                 <h1 className="text-white text-lg font-bold uppercase mb-2">Đội ngũ hỗ trợ</h1>
                                 <p className="text-white text-justify">
-                                    Tự hào là đơn vị <span className="font-semibold uppercase">duy nhất</span> tại Hà
-                                    Nội có đội ngũ hỗ trợ học viên trực tiếp và liên tục tại văn phòng đào tạo từ thứ 2
-                                    đến thứ 7 hàng tuần.
+                                    Có đội ngũ hỗ trợ học viên trực tiếp và liên tục tại VP đào tạo từ thứ 2 đến thứ 7
+                                    hàng toàn.
                                 </p>
                             </div>
                             <div>
                                 <h1 className="text-white text-lg font-bold uppercase mb-2">Không chỉ là học để thi</h1>
                                 <p className="text-white text-justify">
-                                    LOD là trung tâm đầu tiên có phương pháp giảng dạy trực quan thông qua nội dung tưng
-                                    bài thi. Học viên học trên xe tập lái như học trên xe thi –{' '}
-                                    <span className="font-semibold">Là đơn vị có tỷ lệ đỗ cao nhất tại Hà Nội.</span>
+                                    Học viên khi hoàn thành khóa học không chỉ nắm vững kiến thức để thi mà còn vận dụng
+                                    vào thực tế để tham gia giao thông an toàn.
                                 </p>
                             </div>
                         </div>

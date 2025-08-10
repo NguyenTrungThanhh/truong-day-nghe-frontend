@@ -6,7 +6,13 @@ import 'swiper/css/pagination';
 import { assets } from '@/assets/assets';
 
 function SwiperSlider() {
-    const sliders = [assets.slider1, assets.slider1, assets.slider1, assets.slider1, assets.slider1];
+    const sliders = [
+        assets.khaiGiangLopHoc,
+        assets.danXeTapLai,
+        assets.sanTruong2,
+        assets.khoaHocA,
+        assets.sanTruong4,
+    ];
 
     return (
         <div className="w-full">

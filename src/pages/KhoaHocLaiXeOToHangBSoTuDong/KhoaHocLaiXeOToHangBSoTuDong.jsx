@@ -191,7 +191,7 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                 <div className="flex flex-col lg:flex-row gap-4">
                     <div className="w-full lg:w-1/2">
                         <div>
-                            <img src={assets.gioiThieu} alt="" className="rounded-lg" />
+                            <img src={assets.khoaHocB1} alt="" className="rounded-lg" />
                         </div>
                     </div>
 
@@ -262,7 +262,7 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                         <div className="w-full lg:w-1/2">
                             <div>
                                 <img
-                                    src={assets.gioiThieu}
+                                    src={assets.khaiGiangLopHoc}
                                     alt=""
                                     className="rounded-lg w-full h-52 sm:h-64 md:h-72 lg:h-auto object-cover"
                                 />
@@ -403,90 +403,6 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
 
             <div className="w-[90%] lg:w-[80%] mx-auto py-16">
                 <div className="flex justify-center items-center gap-4 mb-8">
-                    <hr className="hidden lg:block w-[20%] border-t-[1px] border-primary-blueOne" />
-                    <h1 className="text-2xl font-bold text-primary-blueOne uppercase text-center">
-                        Đăng ký khu vực học lái xe ô tô hạng B (số tự động) gần nhất
-                    </h1>
-                    <hr className="hidden lg:block w-[20%] border-t-[1px] border-primary-blueOne" />
-                </div>
-                <div className="flex flex-col lg:flex-row gap-4">
-                    <div className="w-full lg:w-1/2">
-                        <div>
-                            <img src={assets.gioiThieu} alt="" className="rounded-lg w-full h-64 object-cover" />
-                        </div>
-                    </div>
-                    <div className="w-full lg:w-1/2">
-                        <ol className="list-decimal pl-4">
-                            <li className="font-semibold my-4">Sân Thành Đô - Nhổn</li>
-                            <li className="font-semibold my-4">Sân Hồng Anh - Ngõ 785 Nguyễn Khoái</li>
-                            <li className="font-semibold my-4">Sân Ngọc Hà - Đê Chèm - Bắc Từ Liêm</li>
-                            <li className="font-semibold my-4">Sân Nguyễn Xiển - Thanh Xuân</li>
-                            <li className="font-semibold my-4">Sân Chúc Sơn - Chương Mỹ</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div className="w-full bg-primary-blueOne py-16">
-                <div className="w-[90%] lg:w-[80%] mx-auto">
-                    <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mb-8 text-center">
-                        <hr className="hidden lg:block w-[39%] border-white" />
-                        <h1 className="text-2xl font-bold text-white uppercase">Đội ngũ giáo viên</h1>
-                        <hr className="hidden lg:block w-[39%] border-white" />
-                    </div>
-
-                    <div className="flex flex-col lg:flex-row items-center gap-8">
-                        <div className="w-full lg:w-1/2">
-                            <div className="flex flex-col gap-4 bg-white p-4 rounded-lg">
-                                <h1 className="text-primary-blueOne text-lg font-bold uppercase text-center border-b border-primary-blueOne pb-4">
-                                    Hơn 200 giáo viên đạt tiêu chuẩn giáo viên dạy <br className="hidden sm:block" />
-                                    giỏi do Tổng Cục Đường Bộ tổ chức thi hàng năm
-                                </h1>
-                                <div className="mt-2 flex flex-col gap-2">
-                                    <p>
-                                        <span className="font-bold text-primary-blueOne">Độ tuổi: </span>Đội ngũ giáo
-                                        viên trẻ, nhiệt huyết, yêu nghề.
-                                    </p>
-                                    <p>
-                                        <span className="font-bold text-primary-blueOne">Trình độ văn hóa: </span>Đa
-                                        phần giáo viên đạt trình độ văn hóa Cao đẳng trở lên.
-                                    </p>
-                                    <p>
-                                        <span className="font-bold text-primary-blueOne">
-                                            Kinh nghiệm nghề nghiệp:{' '}
-                                        </span>
-                                        Tối thiểu 3 năm trong công tác dạy thực hành lái xe.
-                                    </p>
-                                    <p>
-                                        <span className="font-bold text-primary-blueOne">Nghiệp vụ sư phạm: </span>100%
-                                        có chứng chỉ sư phạm dạy nghề đã qua đào tạo.
-                                    </p>
-                                    <p>
-                                        <span className="font-bold text-primary-blueOne">Tâm huyết nghề nghiệp: </span>
-                                        100% yêu thích, tâm huyết với nghề.
-                                    </p>
-                                    <p>
-                                        <span className="font-bold text-primary-blueOne">Kỹ năng giao tiếp: </span>100%
-                                        có kỹ năng giao tiếp và truyền đạt tốt.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="w-full lg:w-1/2">
-                            <div>
-                                <img
-                                    src={assets.gioiThieu}
-                                    alt=""
-                                    className="rounded-lg w-full h-52 sm:h-64 md:h-72 lg:h-[340px] object-cover"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="w-[90%] lg:w-[80%] mx-auto py-16">
-                <div className="flex justify-center items-center gap-4 mb-8">
                     <hr className="hidden lg:block w-[26%] border-t-[1px] border-primary-blueOne" />
                     <h1 className="text-2xl font-bold text-primary-blueOne uppercase text-center">
                         Lợi ích sau khóa học lái xe ô tô hạng B (số tự động)
@@ -530,6 +446,61 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
 
             <div className="w-full bg-primary-blueOne py-16">
                 <div className="w-[90%] lg:w-[80%] mx-auto">
+                    <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mb-8 text-center">
+                        <hr className="hidden lg:block w-[39%] border-white" />
+                        <h1 className="text-2xl font-bold text-white uppercase">Đội ngũ giáo viên</h1>
+                        <hr className="hidden lg:block w-[39%] border-white" />
+                    </div>
+
+                    <div className="flex flex-col lg:flex-row items-center gap-8">
+                        <div className="w-full lg:w-1/2">
+                            <div className="flex flex-col gap-4 bg-white p-4 rounded-lg">
+                                <h1 className="text-primary-blueOne text-lg font-bold uppercase text-center border-b border-primary-blueOne pb-4">
+                                    Hơn 200 giáo viên đạt tiêu chuẩn giáo viên dạy <br className="hidden sm:block" />
+                                    giỏi do Tổng Cục Đường Bộ tổ chức thi hàng năm
+                                </h1>
+                                <div className="mt-2 flex flex-col gap-2">
+                                    <p>
+                                        <span className="font-bold text-primary-blueOne">Trình độ văn hóa: </span>Đội
+                                        ngũ giáo viên đạt trình độ văn hóa cao đẳng trở lên.
+                                    </p>
+                                    <p>
+                                        <span className="font-bold text-primary-blueOne">
+                                            Kinh nghiệm nghề nghiệp:{' '}
+                                        </span>
+                                        Tối thiểu 3 năm trong công tác dạy thực hành lái xe.
+                                    </p>
+                                    <p>
+                                        <span className="font-bold text-primary-blueOne">Nghiệp vụ sư phạm: </span>100%
+                                        có chứng chỉ sư phạm dạy nghề đã qua đào tạo.
+                                    </p>
+                                    <p>
+                                        <span className="font-bold text-primary-blueOne">Tâm huyết nghề nghiệp: </span>
+                                        100% yêu thích, tâm huyết với nghề.
+                                    </p>
+                                    <p>
+                                        <span className="font-bold text-primary-blueOne">Kỹ năng giao tiếp: </span>100%
+                                        có kỹ năng giao tiếp và truyền đạt tốt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full lg:w-1/2">
+                            <div>
+                                <img
+                                    src={assets.giaoVien}
+                                    alt=""
+                                    className="rounded-lg w-full h-52 sm:h-64 md:h-72 lg:h-[340px] object-cover"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="w-full bg-primary-blueOne py-16">
+                <div className="w-[90%] lg:w-[80%] mx-auto">
                     <div className="flex justify-center items-center gap-4 mb-8">
                         <hr className="hidden lg:block w-[35%] border-white" />
                         <h1 className="text-2xl font-bold text-white uppercase text-center">Cảm nhận của học viên</h1>
@@ -543,20 +514,21 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                             loop
                             className="relative z-0 h-full"
                         >
+                            {/* Slide 1 */}
                             <SwiperSlide>
                                 <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
                                     <div className="w-64 flex justify-center">
                                         <img
                                             src={assets.nguyenDoanhChinh}
-                                            className="w-40 h-w-40 object-cover rounded-full border-4 border-white shadow-md"
+                                            className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
                                         />
                                     </div>
                                     <div className="flex-1 flex flex-col items-center gap-3">
                                         <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
                                         <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
-                                            Tôi là Nhà Báo, công việc của tôi rất bận rộn nên việc xếp lịch học vô cùng
-                                            khó khăn. Các thầy ở trung tâm “chiều” tôi hết mức. Cảm ơn thầy Đỉnh, cảm ơn
-                                            Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4
+                                            Là một nhà báo, quỹ thời gian của tôi luôn rất hạn chế. Nhờ sự linh hoạt và
+                                            tận tâm của các thầy cô tại trung tâm, tôi đã hoàn thành khóa học đúng kế
+                                            hoạch. Cảm ơn Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4!
                                         </p>
                                         <p className="font-bold text-[#222]">
                                             Nguyễn Doanh Chính{' '}
@@ -565,24 +537,74 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                                     </div>
                                 </div>
                             </SwiperSlide>
+
+                            {/* Slide 2 */}
                             <SwiperSlide>
                                 <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
                                     <div className="w-64 flex justify-center">
                                         <img
-                                            src={assets.nguyenDoanhChinh}
-                                            className="w-40 h-w-40 object-cover rounded-full border-4 border-white shadow-md"
+                                            src={assets.author1}
+                                            className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
                                         />
                                     </div>
                                     <div className="flex-1 flex flex-col items-center gap-3">
                                         <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
                                         <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
-                                            Tôi là Nhà Báo, công việc của tôi rất bận rộn nên việc xếp lịch học vô cùng
-                                            khó khăn. Các thầy ở trung tâm “chiều” tôi hết mức. Cảm ơn thầy Đỉnh, cảm ơn
-                                            Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4
+                                            Là một giáo viên, tôi luôn coi trọng sự kiên nhẫn và tận tâm. Các thầy cô ở
+                                            trung tâm không chỉ giảng dạy dễ hiểu mà còn truyền cho tôi sự tự tin khi
+                                            cầm lái.
                                         </p>
                                         <p className="font-bold text-[#222]">
-                                            Nguyễn Doanh Chính{' '}
-                                            <span className="font-normal text-sm text-gray-600">/ Nhà báo</span>
+                                            Trần Minh Hạnh{' '}
+                                            <span className="font-normal text-sm text-gray-600">/ Giáo viên</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            {/* Slide 3 */}
+                            <SwiperSlide>
+                                <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
+                                    <div className="w-64 flex justify-center">
+                                        <img
+                                            src={assets.author2}
+                                            className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
+                                        />
+                                    </div>
+                                    <div className="flex-1 flex flex-col items-center gap-3">
+                                        <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
+                                        <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
+                                            Là một kỹ sư xây dựng, tôi quen với việc xử lý tình huống nhanh. Tuy nhiên,
+                                            khi học lái xe, tôi nhận ra tầm quan trọng của sự bình tĩnh và quy tắc giao
+                                            thông mà trung tâm đã dạy.
+                                        </p>
+                                        <p className="font-bold text-[#222]">
+                                            Lê Văn Hoàng{' '}
+                                            <span className="font-normal text-sm text-gray-600">/ Kỹ sư xây dựng</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            {/* Slide 4 */}
+                            <SwiperSlide>
+                                <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
+                                    <div className="w-64 flex justify-center">
+                                        <img
+                                            src={assets.author3}
+                                            className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
+                                        />
+                                    </div>
+                                    <div className="flex-1 flex flex-col items-center gap-3">
+                                        <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
+                                        <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
+                                            Tôi là doanh nhân, thường xuyên phải di chuyển nhiều nơi. Khóa học của trung
+                                            tâm giúp tôi nắm vững kỹ năng lái xe an toàn và tiết kiệm thời gian di
+                                            chuyển.
+                                        </p>
+                                        <p className="font-bold text-[#222]">
+                                            Phạm Hoàng Long{' '}
+                                            <span className="font-normal text-sm text-gray-600">/ Doanh nhân</span>
                                         </p>
                                     </div>
                                 </div>

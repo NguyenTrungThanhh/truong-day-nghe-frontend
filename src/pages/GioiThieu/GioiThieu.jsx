@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import config from '@/configs';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import { assets } from '@/assets/assets';
 
 const GioiThieu = () => {
     const [ref, inView] = useInView({
@@ -126,17 +127,22 @@ const GioiThieu = () => {
                     </div>
                 </section>
 
-                {/* Video giới thiệu */}
-                <section className="mt-10 text-center">
-                    <h2 className="text-xl md:text-2xl font-bold text-primary-blueOne mb-4">Video giới thiệu</h2>
-                    <div className="aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
-                        <iframe
-                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                            title="Giới thiệu Trung tâm"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            className="w-full h-full"
-                        ></iframe>
+                {/* Bộ sưu tập hình ảnh */}
+                <section className="mt-10">
+                    <h2 className="text-xl md:text-2xl font-bold text-primary-blueOne mb-4 text-center">
+                        Hình ảnh hoạt động
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <img
+                            src={assets.gioiThieu}
+                            alt="Hình ảnh 1"
+                            className="w-full h-64 object-cover rounded-xl shadow-md"
+                        />
+                        <img
+                            src={assets.khaiGiangLopHoc}
+                            alt="Hình ảnh 2"
+                            className="w-full h-64 object-cover rounded-xl shadow-md"
+                        />
                     </div>
                 </section>
             </div>

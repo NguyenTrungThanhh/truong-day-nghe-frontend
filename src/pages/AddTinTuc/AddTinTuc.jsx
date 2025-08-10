@@ -14,7 +14,7 @@ function AddTinTuc() {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        document.title = 'Thêm tin tức - KKC Logistics';
+        document.title = 'Thêm tin tức';
     }, []);
 
     const handleSubmit = async (e) => {
