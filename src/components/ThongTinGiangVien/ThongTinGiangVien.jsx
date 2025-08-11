@@ -14,8 +14,7 @@ function ThongTinGiangVien() {
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Hình ảnh */}
                         <div className="w-full lg:w-[30%] flex flex-col gap-4">
-                            <img src={assets.gioiThieu} alt="" className="w-full rounded-md" />
-                            <img src={assets.gioiThieu} alt="" className="w-full rounded-md" />
+                            <img src={assets.giaoVien} alt="" className="w-full rounded-md" />
                         </div>
 
                         {/* Nội dung */}

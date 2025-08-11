@@ -21,11 +21,11 @@ function TaiSao() {
                                 desc: 'Trung tâm đã đào tạo hàng chục nghìn học viên lái xe an toàn, am hiểu luật giao thông. Đó là thành quả của hơn 10 năm phát triển bền vững.',
                             },
                             {
-                                title: 'Đội ngũ giáo viên giỏi – Tận tâm',
+                                title: 'Đội ngũ giáo viên giỏi – Tâm huyết',
                                 desc: 'Giáo viên tại trung tâm đạt chuẩn nghiệp vụ sư phạm, giàu kinh nghiệm và luôn tận tình hướng dẫn học viên trong suốt quá trình học.',
                             },
                             {
-                                title: 'Xe tập lái mới – Có sân tập riêng',
+                                title: 'Hệ thống xe tập lái mới – Sân tập riêng',
                                 desc: 'Sân tập đạt chuẩn và hệ thống xe tập lái đời mới, được bảo dưỡng định kỳ, mang đến trải nghiệm học tập an toàn và hiệu quả.',
                             },
                         ].map((item, index) => (

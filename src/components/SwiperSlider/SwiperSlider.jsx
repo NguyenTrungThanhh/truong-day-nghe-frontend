@@ -6,13 +6,7 @@ import 'swiper/css/pagination';
 import { assets } from '@/assets/assets';
 
 function SwiperSlider() {
-    const sliders = [
-        assets.khaiGiangLopHoc,
-        assets.danXeTapLai,
-        assets.sanTruong2,
-        assets.khoaHocA,
-        assets.sanTruong4,
-    ];
+    const sliders = [assets.sanTruong2, assets.khaiGiangLopHoc, assets.danXeTapLai, assets.sanTruong1, assets.khoaHocA];
 
     return (
         <div className="w-full">
@@ -27,7 +21,7 @@ function SwiperSlider() {
             >
                 {sliders.map((slider, index) => (
                     <SwiperSlide key={index}>
-                        <div className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[440px] xl:h-[520px] overflow-hidden">
+                        <div className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[440px] xl:h-[625px] overflow-hidden">
                             <img src={slider} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
                         </div>
                     </SwiperSlide>

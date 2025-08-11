@@ -23,23 +23,22 @@ function UuDiem() {
                                 </h1>
                                 <p className="text-white text-justify">
                                     Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4 là đơn vị đầu tiên có
-                                    phương pháp giảng dạy trực quan thông qua nội dung từng bài thi. Học viên học trên
-                                    xe tập lái như học trên xe thi –{' '}
-                                    <span className="font-semibold">Là đơn vị có tỷ lệ đỗ cao nhất tại Hà Nội.</span>
+                                    phương pháp giảng dạy trực quan thông qua nội dung từng bài thi. Học viên được học
+                                    tập và thực hành trên xe tập lái giống xe thi.
                                 </p>
                             </div>
                             <div>
                                 <h1 className="text-white text-lg font-bold uppercase mb-2">Đội ngũ hỗ trợ</h1>
                                 <p className="text-white text-justify">
                                     Có đội ngũ hỗ trợ học viên trực tiếp và liên tục tại VP đào tạo từ thứ 2 đến thứ 7
-                                    hàng toàn.
+                                    hàng tuần.
                                 </p>
                             </div>
                             <div>
                                 <h1 className="text-white text-lg font-bold uppercase mb-2">Không chỉ là học để thi</h1>
                                 <p className="text-white text-justify">
-                                    Học viên khi hoàn thành khóa học không chỉ nắm vững kiến thức để thi mà còn vận dụng
-                                    vào thực tế để tham gia giao thông an toàn.
+                                    Học viên sau khi hoàn thành khóa học không chỉ nắm vững kiến thức để thi mà còn vận
+                                    dụng vào thực tế để tham gia giao thông an toàn.
                                 </p>
                             </div>
                         </div>

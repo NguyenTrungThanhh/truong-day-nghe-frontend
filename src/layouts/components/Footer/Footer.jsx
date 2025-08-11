@@ -1,7 +1,6 @@
 import { assets } from '@/assets/assets';
 import config from '@/configs';
-import { faFacebookF, faInstagram, faLinkedinIn, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faChevronUp, faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -55,7 +54,7 @@ function Footer() {
                 className={`
                     fixed bottom-40 right-6 w-10 h-10 bg-primary-blueOne text-white text-[18px] rounded-md flex items-center justify-center 
                     hover:opacity-80 transition-all duration-300 ease-in-out
-                    transform 
+                    transform z-20
                     ${
                         isVisible
                             ? 'opacity-100 scale-100 pointer-events-auto'
@@ -159,7 +158,7 @@ function Footer() {
             {/* Button messenger */}
             <div
                 className={`
-                    fixed bottom-9 right-5 w-12 h-12 bg-primary-blueOne text-white text-[18px] rounded-full flex items-center justify-center 
+                    fixed bottom-9 z-20 right-5 w-12 h-12 bg-primary-blueOne text-white text-[18px] rounded-full flex items-center justify-center 
                     hover:opacity-80 transition-all duration-300 ease-in-out
                     transform 
                 `}

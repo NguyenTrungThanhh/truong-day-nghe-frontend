@@ -5,19 +5,19 @@ const data = [
         name: 'Trần Thị Bích',
         desc: 'Em vừa thi xong và đậu ngay lần đầu tiên! Thầy cô ở Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4 hướng dẫn tận tình, dễ hiểu, luôn tạo động lực để học viên tự tin khi lái xe.',
         address: 'Bỉm Sơn - Thanh Hóa',
-        image: assets.khoaHocB2,
+        image: assets.camNhanHocVien1,
     },
     {
         name: 'Phạm Văn Hùng',
         desc: 'Học ở Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4 đúng là một trải nghiệm tuyệt vời. Kiến thức lý thuyết được truyền đạt rõ ràng, phần thực hành rất sát với bài thi, giúp em thi mà không bị bỡ ngỡ.',
         address: 'Hà Trung - Thanh Hóa',
-        image: assets.gioiThieu,
+        image: assets.camNhanHocVien2,
     },
     {
         name: 'Ngô Minh Quân',
         desc: 'Thầy cô vui tính, hỗ trợ học viên từng chút một. Em cảm thấy tự tin hơn rất nhiều khi cầm vô-lăng. Cảm ơn Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4 đã giúp em đạt kết quả tốt.',
         address: 'Nga Sơn - Thanh Hóa',
-        image: assets.sanTruong4,
+        image: assets.camNhanHocVien3,
     },
 ];
 

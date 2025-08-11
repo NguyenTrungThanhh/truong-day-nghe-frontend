@@ -16,10 +16,10 @@ function HinhAnhTaiTrungTam() {
                     {[
                         { img: assets.tuVanCacKhoaHoc, text: 'Tư vấn các Khóa học' },
                         { img: assets.khaiGiangLopHoc, text: 'Khai giảng lớp học' },
-                        { img: assets.sanTruong1, text: 'Sân tập lái xe' },
+                        { img: assets.sanTruong3, text: 'Sân tập lái xe' },
                         { img: assets.danXeTapLai, text: 'Xe tập lái của Trung tâm' },
                         { img: assets.giaoVien, text: 'Thầy giáo của trung tâm' },
-                        { img: assets.khoaHocB2, text: 'Hướng dẫn học viên' },
+                        { img: assets.huongDanHocVien, text: 'Hướng dẫn học viên' },
                         { img: assets.hocLyThuyet, text: 'Phòng học lý thuyết' },
                         { img: assets.bangOTrungTam, text: 'Hồ sơ đã đỗ' },
                     ].map((item, idx) => (

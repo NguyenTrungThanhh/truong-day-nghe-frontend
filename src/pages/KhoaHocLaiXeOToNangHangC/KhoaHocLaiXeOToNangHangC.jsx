@@ -146,7 +146,7 @@ function KhoaHocLaiXeOToNangHangC() {
                 <div className="flex flex-col lg:flex-row gap-4">
                     <div className="w-full lg:w-1/2">
                         <div>
-                            <img src={assets.sanTruong3} alt="" className="rounded-lg" />
+                            <img src={assets.khoaHocC1} alt="" className="rounded-lg" />
                         </div>
                     </div>
                     <div className="w-full lg:w-1/2">
@@ -188,24 +188,33 @@ function KhoaHocLaiXeOToNangHangC() {
                     </div>
                     <div className="flex flex-col lg:flex-row items-center gap-8">
                         <div className="w-full lg:w-1/2">
-                            <div className="flex flex-col gap-4 text-white">
-                                <h1 className="text-xl font-bold uppercase">Đưa chương trình thi vào đào tạo</h1>
-                                <p>
-                                    LOD là trung tâm đầu tiên có phương pháp giảng dạy trực quan thông qua nội dung từng
-                                    bài thi. Học viên học trên xe tập lái như học trên xe thi – Là đơn vị có tỷ lệ đỗ
-                                    cao nhất tại Hà Nội.
-                                </p>
-                                <h1 className="text-xl font-bold uppercase">Đội ngũ hỗ trợ</h1>
-                                <p>
-                                    Tự hào là đơn vị DUY NHẤT tại Hà Nội có đội ngũ hỗ trợ học viên trực tiếp và liên
-                                    tục tại văn phòng đào tạo từ thứ 2 đến thứ 7 hàng tuần.
-                                </p>
-                                <h1 className="text-xl font-bold uppercase">Không chỉ là học để thi</h1>
-                                <p>
-                                    Ngoài nội dung đào tạo chuyên sâu bám sát nội dung 11 bài thi, Trung tâm Đào tạo Lái
-                                    xe - Công ty Cổ phần Vận tải Ô tô số 4 còn hướng bạn tới những kỹ năng lái tốt và am
-                                    hiểu luật khi tham gia giao thông.
-                                </p>
+                            <div className="flex flex-col gap-6">
+                                <div>
+                                    <h1 className="text-white text-lg font-bold uppercase mb-4">
+                                        Đưa chương trình thi vào đào tạo
+                                    </h1>
+                                    <p className="text-white text-justify">
+                                        Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4 là đơn vị đầu tiên
+                                        có phương pháp giảng dạy trực quan thông qua nội dung từng bài thi. Học viên
+                                        được học tập và thực hành trên xe tập lái giống xe thi.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h1 className="text-white text-lg font-bold uppercase mb-2">Đội ngũ hỗ trợ</h1>
+                                    <p className="text-white text-justify">
+                                        Có đội ngũ hỗ trợ học viên trực tiếp và liên tục tại VP đào tạo từ thứ 2 đến thứ
+                                        7 hàng tuần.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h1 className="text-white text-lg font-bold uppercase mb-2">
+                                        Không chỉ là học để thi
+                                    </h1>
+                                    <p className="text-white text-justify">
+                                        Học viên sau khi hoàn thành khóa học không chỉ nắm vững kiến thức để thi mà còn
+                                        vận dụng vào thực tế để tham gia giao thông an toàn.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div className="w-full lg:w-1/2">

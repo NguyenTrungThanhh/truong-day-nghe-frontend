@@ -43,26 +43,29 @@ function KhoaHocLaiXeMoToHangA1() {
                         <hr className="hidden lg:block w-[26%] border-white" />
                     </div>
                     <p className="text-center text-white mb-8">
-                        Giáo trình bám sát nội dung sát hạch cho hạng A1, nhằm đảm bảo tỉ lệ đạt cao nhất.
+                        Giáo trình đào tạo bám sát nội dung sát hạch hạng A1 theo Thông tư 35/2024/TT-BGTVT, đảm bảo tỉ
+                        lệ đạt cao.
                     </p>
 
                     <div className="bg-white p-6 rounded-lg">
+                        {/* Điều kiện & hồ sơ */}
                         <h2 className="text-primary-blueOne text-xl font-semibold mb-4 uppercase">
                             🧾 Điều kiện & hồ sơ
                         </h2>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Độ tuổi: Từ 18 tuổi (tính đến ngày dự sát hạch).</li>
+                            <li>Độ tuổi: Từ 18 tuổi (tính đến ngày dự sát hạch cấp GPLX).</li>
                             <li>
                                 Hồ sơ bao gồm:
                                 <ul className="list-disc pl-6">
                                     <li>Đơn đề nghị học – dự sát hạch (theo mẫu).</li>
-                                    <li>Giấy khám sức khỏe (theo quy định).</li>
+                                    <li>Giấy chứng nhận sức khỏe (theo mẫu).</li>
                                     <li>Bản sao CCCD hoặc Hộ chiếu còn hiệu lực.</li>
-                                    <li>02 ảnh 3x4 nền xanh theo chuẩn GPLX.</li>
+                                    <li>08 ảnh 3x4 nền xanh và 02 ảnh 4x6 nền trắng.</li>
                                 </ul>
                             </li>
                         </ul>
 
+                        {/* Lý thuyết */}
                         <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">📚 Lý thuyết</h2>
                         <div className="overflow-x-auto border border-gray-200 rounded-lg">
                             <table className="min-w-full text-sm text-left">
@@ -78,41 +81,18 @@ function KhoaHocLaiXeMoToHangA1() {
                                     <tr>
                                         <td className="border px-4 py-2">1</td>
                                         <td className="border px-4 py-2">Pháp luật về giao thông đường bộ</td>
-                                        <td className="border px-4 py-2 text-center">20</td>
+                                        <td className="border px-4 py-2 text-center">8</td>
                                     </tr>
                                     <tr>
                                         <td className="border px-4 py-2">2</td>
                                         <td className="border px-4 py-2">Kỹ thuật lái xe</td>
-                                        <td className="border px-4 py-2 text-center">4</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border px-4 py-2">3</td>
-                                        <td className="border px-4 py-2">Cấu tạo và sửa chữa thông thường</td>
                                         <td className="border px-4 py-2 text-center">2</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border px-4 py-2">4</td>
-                                        <td className="border px-4 py-2">
-                                            Đạo đức, văn hóa giao thông và phòng chống tác hại của rượu, bia
-                                        </td>
-                                        <td className="border px-4 py-2 text-center">4</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border px-4 py-2">5</td>
-                                        <td className="border px-4 py-2">
-                                            Kỹ năng xử lý tình huống giao thông (phần mềm mô phỏng)
-                                        </td>
-                                        <td className="border px-4 py-2 text-center">2</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border px-4 py-2">6</td>
-                                        <td className="border px-4 py-2">Kỹ năng PCCC và cứu nạn cứu hộ</td>
-                                        <td className="border px-4 py-2 text-center">4</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
+                        {/* Thực hành */}
                         <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">🚘 Thực hành</h2>
                         <div className="overflow-x-auto border border-gray-200 rounded-lg">
                             <table className="min-w-full text-sm text-left">
@@ -127,42 +107,48 @@ function KhoaHocLaiXeMoToHangA1() {
                                 <tbody className="text-gray-700">
                                     <tr>
                                         <td className="border px-4 py-2">1</td>
-                                        <td className="border px-4 py-2">Thực hành lái xe trên sân tập</td>
-                                        <td className="border px-4 py-2 text-center">12</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border px-4 py-2">2</td>
-                                        <td className="border px-4 py-2">Thực hành lái xe trên đường giao thông</td>
+                                        <td className="border px-4 py-2">Thực hành lái xe</td>
                                         <td className="border px-4 py-2 text-center">2</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
+                        {/* Tổng thời gian đào tạo */}
+                        <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">
+                            🕒 Tổng thời gian đào tạo
+                        </h2>
+                        <p>
+                            Tổng thời gian đào tạo: <strong>12 giờ</strong> (10 giờ lý thuyết + 2 giờ thực hành).
+                        </p>
+
+                        {/* Hoàn thành & kiểm tra */}
                         <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">
                             ✅ Hoàn thành & kiểm tra
                         </h2>
                         <p>
-                            Học viên phải hoàn thành đầy đủ các môn học lý thuyết và thực hành, tham gia kiểm tra cuối
-                            khóa đạt yêu cầu để được cấp giấy chứng nhận học xong chương trình, là điều kiện để dự sát
-                            hạch.
+                            Học viên phải hoàn thành 100% các bài kiểm tra khi kết thúc môn học trong chương trình đào
+                            tạo, đạt yêu cầu để được cấp giấy chứng nhận hoàn thành khóa học – điều kiện dự sát hạch cấp
+                            GPLX.
                         </p>
 
+                        {/* Thời gian khóa học */}
                         <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">
                             ⏳ Thời gian khóa học
                         </h2>
                         <p>
-                            Thời gian khóa học không quá <strong>90 ngày</strong> kể từ ngày khai giảng (bao gồm học,
-                            kiểm tra và nghỉ lễ).
+                            Thời gian đào tạo không quá <strong>90 ngày</strong> kể từ ngày khai giảng, bao gồm cả thời
+                            gian ôn tập, kiểm tra hết môn và nghỉ lễ, Tết.
                         </p>
 
+                        {/* Địa điểm & hỗ trợ */}
                         <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">
                             📍 Địa điểm & hỗ trợ
                         </h2>
                         <p>
-                            Học tại Trung tâm Đào tạo Lái xe – Công ty Cổ phần Vận tải Ô tô số 4. Mọi thông tin chi tiết
-                            vui lòng liên hệ Phòng Đào tạo hoặc gọi ngay:{' '}
-                            <span className="font-semibold">02373.824.988</span>
+                            Học tại Trung tâm Đào tạo lái xe mô tô và bổ túc nghề – Công ty Cổ phần Vận tải Ô tô số 4.
+                            Liên hệ Phòng Đào tạo qua số <span className="font-semibold">02373.824.988</span> để được hỗ
+                            trợ.
                         </p>
                     </div>
                 </div>

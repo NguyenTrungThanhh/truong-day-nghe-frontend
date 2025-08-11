@@ -43,7 +43,8 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                         <hr className="hidden lg:block w-[23%] border-white" />
                     </div>
                     <p className="text-center text-white mb-8">
-                        Giáo trình bám sát nội dung sát hạch cho hạng B (số tự động), nhằm đảm bảo tỉ lệ đạt cao nhất.
+                        Giáo trình bám sát nội dung sát hạch cho hạng B (số tự động), theo Thông tư 35/2024/TT-BGTVT,
+                        giúp học viên nắm vững lý thuyết và thành thạo kỹ năng lái xe an toàn.
                     </p>
 
                     <div className="bg-white p-6 rounded-lg">
@@ -93,7 +94,7 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                                             Đạo đức, văn hóa giao thông và phòng chống tác hại của rượu, bia
                                         </td>
                                         <td className="border px-4 py-2 text-center" rowSpan={2}>
-                                            16
+                                            14
                                         </td>
                                     </tr>
                                     <tr>
@@ -108,6 +109,12 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                                         <td className="border px-4 py-2">5</td>
                                         <td className="border px-4 py-2">Phần mềm mô phỏng tình huống giao thông</td>
                                         <td className="border px-4 py-2 text-center">4</td>
+                                    </tr>
+                                    <tr className="bg-gray-50 font-semibold">
+                                        <td className="border px-4 py-2 text-center" colSpan={2}>
+                                            Tổng thời gian học lý thuyết
+                                        </td>
+                                        <td className="border px-4 py-2 text-center">136 giờ</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -140,15 +147,31 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                                         <td className="border px-4 py-2">Lái xe trên cabin mô phỏng</td>
                                         <td className="border px-4 py-2 text-center">2 giờ</td>
                                     </tr>
-                                    <tr>
-                                        <td className="border px-4 py-2 font-semibold" colSpan={2}>
+                                    <tr className="bg-gray-50 font-semibold">
+                                        <td className="border px-4 py-2" colSpan={2}>
                                             Tổng quãng đường thực hành mỗi học viên
                                         </td>
-                                        <td className="border px-4 py-2 text-center font-semibold">1.000 km</td>
+                                        <td className="border px-4 py-2 text-center">1.000 km</td>
+                                    </tr>
+                                    <tr className="bg-gray-50 font-semibold">
+                                        <td className="border px-4 py-2" colSpan={2}>
+                                            Tổng thời gian học thực hành
+                                        </td>
+                                        <td className="border px-4 py-2 text-center">67 giờ</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+
+                        <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">
+                            ⏱ Tổng thời gian đào tạo
+                        </h2>
+                        <p className="mb-4">
+                            <span className="font-semibold">203 giờ</span> (136 giờ lý thuyết + 67 giờ thực hành), tương
+                            ứng <span className="font-semibold">1.000 km</span> thực hành lái xe. Thời gian học tối đa{' '}
+                            <span className="font-semibold">90 ngày</span> kể từ ngày khai giảng, bao gồm học, ôn tập,
+                            kiểm tra và nghỉ lễ/Tết.
+                        </p>
 
                         <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">
                             ✅ Hoàn thành & kiểm tra
@@ -157,14 +180,6 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                             Học viên phải tham gia đầy đủ các buổi học, kiểm tra lý thuyết và thực hành theo chương
                             trình. Điểm kiểm tra đạt chuẩn là điều kiện để xét hoàn thành khóa học và đăng ký thi sát
                             hạch.
-                        </p>
-
-                        <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">
-                            ⏳ Thời gian khóa học
-                        </h2>
-                        <p>
-                            Không quá 90 ngày kể từ ngày khai giảng (bao gồm học, ôn tập, kiểm tra và nghỉ Lễ/Tết theo
-                            lịch).
                         </p>
 
                         <h2 className="text-primary-blueOne text-xl font-semibold mt-8 mb-4 uppercase">
@@ -191,7 +206,7 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
                 <div className="flex flex-col lg:flex-row gap-4">
                     <div className="w-full lg:w-1/2">
                         <div>
-                            <img src={assets.khoaHocB1} alt="" className="rounded-lg" />
+                            <img src={assets.toyotaViosGold} alt="" className="rounded-lg" />
                         </div>
                     </div>
 
@@ -236,26 +251,33 @@ function KhoaHocLaiXeOToHangBSoTuDong() {
 
                     <div className="flex flex-col lg:flex-row items-center gap-8">
                         <div className="w-full lg:w-1/2">
-                            <div className="flex flex-col gap-4 text-white">
-                                <h1 className="text-xl font-bold uppercase">Chương trình đào tạo sát thực tế</h1>
-                                <p>
-                                    Chúng tôi xây dựng chương trình học bám sát nội dung thi sát hạch A1, kết hợp giữa
-                                    lý thuyết, mô phỏng và thực hành giúp học viên tự tin khi thi và khi tham gia giao
-                                    thông thực tế.
-                                </p>
-
-                                <h1 className="text-xl font-bold uppercase">Đội ngũ giảng viên & hỗ trợ tận tâm</h1>
-                                <p>
-                                    Trung tâm có đội ngũ giáo viên giàu kinh nghiệm, hướng dẫn tận tình. Bộ phận hỗ trợ
-                                    làm việc liên tục từ thứ 2 đến thứ 7 để giải đáp mọi thắc mắc của học viên.
-                                </p>
-
-                                <h1 className="text-xl font-bold uppercase">Học để sử dụng lâu dài</h1>
-                                <p>
-                                    Không chỉ học để thi, chúng tôi chú trọng trang bị kiến thức luật giao thông và kỹ
-                                    năng lái xe an toàn trên đường trường, giúp học viên tự tin điều khiển xe sau khi có
-                                    bằng.
-                                </p>
+                            <div className="flex flex-col gap-6">
+                                <div>
+                                    <h1 className="text-white text-lg font-bold uppercase mb-4">
+                                        Đưa chương trình thi vào đào tạo
+                                    </h1>
+                                    <p className="text-white text-justify">
+                                        Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4 là đơn vị đầu tiên
+                                        có phương pháp giảng dạy trực quan thông qua nội dung từng bài thi. Học viên
+                                        được học tập và thực hành trên xe tập lái giống xe thi.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h1 className="text-white text-lg font-bold uppercase mb-2">Đội ngũ hỗ trợ</h1>
+                                    <p className="text-white text-justify">
+                                        Có đội ngũ hỗ trợ học viên trực tiếp và liên tục tại VP đào tạo từ thứ 2 đến thứ
+                                        7 hàng tuần.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h1 className="text-white text-lg font-bold uppercase mb-2">
+                                        Không chỉ là học để thi
+                                    </h1>
+                                    <p className="text-white text-justify">
+                                        Học viên sau khi hoàn thành khóa học không chỉ nắm vững kiến thức để thi mà còn
+                                        vận dụng vào thực tế để tham gia giao thông an toàn.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 

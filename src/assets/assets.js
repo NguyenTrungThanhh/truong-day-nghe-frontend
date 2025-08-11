@@ -16,10 +16,10 @@ import news2 from './images/news/news_2.webp';
 
 // Image
 import gioiThieu from './images/gioi_thieu.jpg';
+import huongDanHocVien from './images/huong_dan_hoc_vien.jpg';
 import khoaHocA from './images/khoa_hoc_a.jpg';
-import khoaHocB1 from './images/khoa_hoc_b1.jpg';
-import khoaHocB2 from './images/khoa_hoc_b2.jpg';
 import khoaHocC from './images/khoa_hoc_c.jpg';
+import khoaHocC1 from './images/khoa_hoc_c1.jpg';
 import tuVanCacKhoaHoc from './images/tu_van_cac_khoa_hoc.jpg';
 import khaiGiangLopHoc from './images/khai_giang_lop_hoc.jpg';
 import nguyenDoanhChinh from './images/nguyen-doanh-chinh.jpg';
@@ -33,6 +33,11 @@ import sanTruong2 from './images/san_truong_2.jpg';
 import sanTruong3 from './images/san_truong_3.jpg';
 import giaoVien from './images/giao_vien.jpg';
 import hocLyThuyet from './images/hoc_ly_thuyet.jpg';
+import toyotaVios from './images/toyota_vios.jpg';
+import toyotaViosGold from './images/toyota_vios_gold.jpg';
+import camNhanHocVien1 from './images/cam_nhan_hoc_vien_1.jpg';
+import camNhanHocVien2 from './images/cam_nhan_hoc_vien_2.jpg';
+import camNhanHocVien3 from './images/cam_nhan_hoc_vien_3.jpg';
 
 export const assets = {
     logo,
@@ -42,10 +47,10 @@ export const assets = {
     iconMessenger,
     iconZalo,
     gioiThieu,
+    huongDanHocVien,
     khoaHocA,
-    khoaHocB1,
-    khoaHocB2,
     khoaHocC,
+    khoaHocC1,
     tuVanCacKhoaHoc,
     khaiGiangLopHoc,
     nguyenDoanhChinh,
@@ -59,6 +64,11 @@ export const assets = {
     sanTruong3,
     giaoVien,
     hocLyThuyet,
+    toyotaVios,
+    toyotaViosGold,
+    camNhanHocVien1,
+    camNhanHocVien2,
+    camNhanHocVien3,
 };
 
 export const tinTucData = [

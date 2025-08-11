@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 const allCourses = [
     {
         name: 'Khoá học lái xe mô tô hạng A1',
-        image: assets.khoaHocB1,
+        image: assets.khoaHocA,
         route: config.routes.KhoaHocLaiXeMoToHangA1,
     },
     {
         name: 'Khóa học lái xe ô tô hạng B ( số tự động )',
-        image: assets.khoaHocB1,
+        image: assets.toyotaViosGold,
         route: config.routes.KhoaHocLaiXeOToHangBSoTuDong,
     },
     {
         name: 'Khóa học lái xe ô tô hạng B ( số cơ khí )',
-        image: assets.khoaHocB2,
+        image: assets.toyotaVios,
         route: config.routes.KhoaHocLaiXeOToHangBSoCoKhi,
     },
     {
@@ -25,7 +25,7 @@ const allCourses = [
     },
     {
         name: 'Khóa học lái xe ô tô nâng hạng C',
-        image: assets.khoaHocC,
+        image: assets.khoaHocC1,
         route: config.routes.KhoaHocLaiXeOToNangHangC,
     },
 ];
