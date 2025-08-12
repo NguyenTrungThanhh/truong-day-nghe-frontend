@@ -181,10 +181,6 @@ function KhoaHocLaiXeMoToHangA1() {
                                 thuyết và dễ vi phạm sau khi lấy bằng.
                             </li>
                             <li className="font-semibold my-4">
-                                Bỏ qua luyện tập mô phỏng. Mô phỏng tình huống là phần mới trong chương trình nhưng
-                                nhiều người bỏ qua, dẫn đến thi trượt.
-                            </li>
-                            <li className="font-semibold my-4">
                                 Lơ là thực hành sân thi. Không tập đủ các tình huống trên sân sa hình dẫn đến tâm lý
                                 hoang mang và phạm lỗi khi thi.
                             </li>
