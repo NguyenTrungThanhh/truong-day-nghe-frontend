@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { useContext, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
@@ -7,13 +8,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import TinTucItem from '@/components/TinTucItem';
-import { tinTucData } from '@/assets/assets';
 import config from '@/configs';
-import { Link } from 'react-router-dom';
+import { TruongDayngheContext } from '@/context/TruongDayngheContext';
 
 function TinTuc() {
     const swiperRef = useRef(null);
+
+    const { tinTucData } = useContext(TruongDayngheContext);
 
     return (
         <div className="w-full py-16">
@@ -48,7 +49,7 @@ function TinTuc() {
                                             <img
                                                 src={item.image}
                                                 alt=""
-                                                className="w-full h-auto object-cover rounded-xl group-hover:scale-110 duration-300"
+                                                className="w-full h-56 object-cover rounded-xl group-hover:scale-110 duration-300"
                                             />
                                         </Link>
                                     </div>

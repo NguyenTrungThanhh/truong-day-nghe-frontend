@@ -415,23 +415,25 @@ function KhoaHocLaiXeMoToHangA1() {
                             modules={[Navigation, Pagination]}
                             pagination={{ clickable: true }}
                             loop
-                            className="relative z-0 h-full"
+                            autoHeight={true}
+                            className="relative z-0 h-full rounded-xl"
                         >
                             {/* Slide 1 */}
                             <SwiperSlide>
                                 <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
-                                    <div className="w-64 flex justify-center">
+                                    <div className="flex justify-center w-full lg:w-64">
                                         <img
                                             src={assets.nguyenDoanhChinh}
-                                            className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
+                                            className="w-40 aspect-square object-cover rounded-full border-4 border-white shadow-md"
                                         />
                                     </div>
+
                                     <div className="flex-1 flex flex-col items-center gap-3">
                                         <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
                                         <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
-                                            Là một nhà báo, quỹ thời gian của tôi luôn rất hạn chế. Nhờ sự linh hoạt và
-                                            tận tâm của các thầy cô tại trung tâm, tôi đã hoàn thành khóa học đúng kế
-                                            hoạch. Cảm ơn Trung tâm Đào tạo Lái xe - Công ty Cổ phần Vận tải Ô tô số 4!
+                                            Là một nhà báo, quỹ thời gian của tôi rất hạn chế. Nhờ sự linh hoạt và tận
+                                            tâm của các thầy cô, tôi đã hoàn thành khóa học đúng kế hoạch. Xin cảm ơn
+                                            Trung tâm Đào tạo Lái xe!
                                         </p>
                                         <p className="font-bold text-[#222]">
                                             Nguyễn Doanh Chính{' '}
@@ -444,12 +446,13 @@ function KhoaHocLaiXeMoToHangA1() {
                             {/* Slide 2 */}
                             <SwiperSlide>
                                 <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
-                                    <div className="w-64 flex justify-center">
+                                    <div className="flex justify-center w-full lg:w-64">
                                         <img
                                             src={assets.author1}
-                                            className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
+                                            className="w-40 aspect-square object-cover rounded-full border-4 border-white shadow-md"
                                         />
                                     </div>
+
                                     <div className="flex-1 flex flex-col items-center gap-3">
                                         <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
                                         <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
@@ -468,12 +471,13 @@ function KhoaHocLaiXeMoToHangA1() {
                             {/* Slide 3 */}
                             <SwiperSlide>
                                 <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
-                                    <div className="w-64 flex justify-center">
+                                    <div className="flex justify-center w-full lg:w-64">
                                         <img
                                             src={assets.author2}
-                                            className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
+                                            className="w-40 aspect-square object-cover rounded-full border-4 border-white shadow-md"
                                         />
                                     </div>
+
                                     <div className="flex-1 flex flex-col items-center gap-3">
                                         <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
                                         <p className="text-lg italic text-[#1a1a1a] max-w-3xl">
@@ -492,12 +496,13 @@ function KhoaHocLaiXeMoToHangA1() {
                             {/* Slide 4 */}
                             <SwiperSlide>
                                 <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 lg:p-20 text-center flex flex-col lg:flex-row items-center justify-center gap-6">
-                                    <div className="w-64 flex justify-center">
+                                    <div className="flex justify-center w-full lg:w-64">
                                         <img
                                             src={assets.author3}
-                                            className="w-40 h-40 object-cover rounded-full border-4 border-white shadow-md"
+                                            className="w-40 aspect-square object-cover rounded-full border-4 border-white shadow-md"
                                         />
                                     </div>
+
                                     <div className="flex-1 flex flex-col items-center gap-3">
                                         <div className="text-primary font-semibold text-lg">{'★'.repeat(5)}</div>
                                         <p className="text-lg italic text-[#1a1a1a] max-w-3xl">

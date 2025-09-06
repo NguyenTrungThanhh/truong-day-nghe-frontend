@@ -22,14 +22,19 @@ function TinTuc() {
 
     const sortedTinTucData = [...tinTucData].sort((a, b) => {
         const parseDate = (str) => {
-            const parts = str.split(/[\/\-]/);
-            const day = parseInt(parts[0], 10);
-            const month = parseInt(parts[1], 10) - 1;
-            const year = parseInt(parts[2], 10);
+            // str: "21 tháng 5, 2025"
+            const regex = /(\d{1,2})\s+tháng\s+(\d{1,2}),\s*(\d{4})/;
+        const match = str.match(regex);
+            if (!match) return new Date(0); // fallback nếu sai định dạng
+
+            const day = parseInt(match[1], 10);
+            const month = parseInt(match[2], 10) - 1; // JS month = 0-11
+            const year = parseInt(match[3], 10);
+
             return new Date(year, month, day);
         };
 
-        return parseDate(b.date) - parseDate(a.date);
+        return parseDate(b.date) - parseDate(a.date); // mới nhất lên đầu
     });
 
     const currentItems = sortedTinTucData.slice(indexOfFirstItem, indexOfLastItem);

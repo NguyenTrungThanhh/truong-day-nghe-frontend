@@ -148,18 +148,21 @@ function BangGiaHocPhi() {
 
                             {/* Phần đáy card */}
                             <div className="mt-auto pt-4 border-t">
-                                <div className="flex items-center justify-between">
+                                <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-3">
+                                    {/* Giá */}
                                     <p className="text-lg font-bold text-red-500">{khoa.price}</p>
-                                    <div className="flex gap-2">
+
+                                    {/* Nút */}
+                                    <div className="flex flex-col xl:flex-row gap-2 w-full xl:w-auto">
                                         <button
-                                            className="px-4 py-2 bg-primary-blueOne text-white rounded-full hover:bg-primary-blueTwo transition"
+                                            className="w-full xl:w-auto px-4 py-2 bg-primary-blueOne text-white rounded-full hover:bg-primary-blueTwo transition"
                                             onClick={() => setShowModal(true)}
                                         >
                                             Đăng ký ngay
                                         </button>
                                         <Link
                                             to={khoa.route}
-                                            className="px-4 py-2 bg-primary-blueOne text-white rounded-full hover:bg-primary-blueTwo transition"
+                                            className="w-full xl:w-auto px-4 py-2 bg-primary-blueOne text-white rounded-full hover:bg-primary-blueTwo transition text-center"
                                         >
                                             Chi tiết
                                         </Link>

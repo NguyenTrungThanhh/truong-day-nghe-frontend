@@ -4,13 +4,13 @@ function HeaderAdmin() {
     const navigate = useNavigate();
 
     const handleLogout = () => {
-        localStorage.removeItem('isAdmin');
+        localStorage.removeItem('adminToken');
         navigate('/');
     };
 
     return (
         <>
-            {localStorage.getItem('isAdmin') ? (
+            {localStorage.getItem('adminToken') ? (
                 <div className="w-full border-b-2 border-gray-200 px-5 sm:px-12 py-4 bg-white text-gray-800 flex justify-between items-center shadow-md">
                     <h1 className="text-2xl font-bold text-blue-500">Admin Panel</h1>
                     <button

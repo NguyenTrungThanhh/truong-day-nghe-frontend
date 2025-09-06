@@ -1,9 +1,9 @@
-import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { toast } from 'react-toastify';
 import { assets } from '@/assets/assets';
+import apiAdmin from '@/api/apiAdmin';
 
 function AddTinTuc() {
     const [name, setName] = useState('');
@@ -29,7 +29,7 @@ function AddTinTuc() {
             formData.append('date', date);
             formData.append('image', image);
 
-            const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/v1/admin/TinTuc/add`, formData, {
+            const response = await apiAdmin.post('/TinTuc/add', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
 
@@ -44,7 +44,7 @@ function AddTinTuc() {
                 toast.error('Something went wrong');
             }
         } catch (error) {
-            toast.error('Error occurred');
+            toast.error(error.response?.data?.message || 'Error occurred');
         }
 
         setLoading(false);
@@ -56,21 +56,17 @@ function AddTinTuc() {
                 upload: () =>
                     loader.file.then(async (file) => {
                         const formData = new FormData();
-                        formData.append('image', file); // phải là 'image' vì backend dùng upload.single('image')
+                        formData.append('image', file); // phải khớp với backend (upload.single('image'))
 
                         try {
-                            const res = await axios.post(
-                                `${import.meta.env.VITE_API_URL}/api/v1/admin/upload-image`,
-                                formData,
-                                {
-                                    headers: {
-                                        'Content-Type': 'multipart/form-data',
-                                    },
+                            const res = await apiAdmin.post('/upload-image', formData, {
+                                headers: {
+                                    'Content-Type': 'multipart/form-data',
                                 },
-                            );
+                            });
 
                             return {
-                                default: res.data.url, // Cloudinary trả về đường dẫn ảnh
+                                default: res.data.url, // Backend/Cloudinary trả về URL ảnh
                             };
                         } catch (error) {
                             console.error('Lỗi upload ảnh:', error);
@@ -87,7 +83,7 @@ function AddTinTuc() {
         </div>
     ) : (
         <>
-            {localStorage.getItem('isAdmin') ? (
+            {localStorage.getItem('adminToken') ? (
                 <form
                     onSubmit={handleSubmit}
                     className="flex flex-col items-start gap-8 text-gray-600 pt-8 pl-5 sm:pt-12 sm:pl-12"

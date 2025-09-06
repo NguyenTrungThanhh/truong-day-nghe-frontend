@@ -1,4 +1,4 @@
-import { use, useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectFade } from 'swiper/modules';
@@ -31,18 +31,17 @@ function DisplayTinTuc() {
         };
 
         fetchData();
-        console.log(tinTucData);
     }, [slug]);
 
     useEffect(() => {
         document.title = newsData?.name;
-    });
+    }, [newsData]);
 
     return (
         <>
             {/* Breadcrumb */}
             <div className="w-full bg-[#f4f4f4] py-4">
-                <div className="w-[78%] mx-auto">
+                <div className="w-[90%] lg:w-[80%] mx-auto">
                     <div className="flex items-center gap-4 text-sm font-medium">
                         <Link to={config.routes.home}>
                             <h1>Trang chủ</h1>
@@ -58,13 +57,15 @@ function DisplayTinTuc() {
             </div>
 
             {/* Main content */}
-            <div className="w-[78%] mx-auto mt-10">
-                <div className="flex gap-6 items-start">
+            <div className="w-[90%] lg:w-[80%] mx-auto mt-10">
+                <div className="flex flex-col lg:flex-row gap-6 items-start">
                     {/* Nội dung chính */}
-                    <div className="w-[70%] pr-4">
+                    <div className="w-full lg:w-[70%] lg:pr-4">
                         {newsData ? (
                             <>
-                                <h1 className="text-[32px] font-bold mb-4 text-primary-blueOne">{newsData.name}</h1>
+                                <h1 className="text-2xl lg:text-[32px] font-bold mb-4 text-primary-blueOne">
+                                    {newsData.name}
+                                </h1>
                                 <p className="text-gray-500 text-sm mb-4 italic">{newsData.date}</p>
                                 <div className="content-area" dangerouslySetInnerHTML={{ __html: newsData.content }} />
                             </>
@@ -74,23 +75,21 @@ function DisplayTinTuc() {
                     </div>
 
                     {/* Tin tức nổi bật */}
-                    <div className="w-[30%] pl-6 border-l border-gray-300 sticky top-28">
-                        <h2 className="text-2xl font-bold mb-4 text-primary-blueOne">Tin tức nổi bật</h2>
+                    <div className="w-full lg:w-[30%] lg:pl-6 lg:border-l lg:border-gray-300 lg:sticky lg:top-28">
+                        <h2 className="text-xl lg:text-2xl font-bold mb-4 text-primary-blueOne">Tin tức nổi bật</h2>
                         <div className="flex flex-col gap-8">
                             {tinTucData.slice(0, 6).map((item, index) => (
                                 <div key={index} className="flex items-center gap-4 group">
-                                    <Link to={`${config.routes.TinTuc}/${item.slug}`}>
-                                        <div>
-                                            <img
-                                                src={item.image}
-                                                alt=""
-                                                className="w-[142px] rounded-lg group-hover:scale-105 duration-300"
-                                            />
-                                        </div>
+                                    <Link to={`${config.routes.TinTuc}/${item.slug}`} className="shrink-0">
+                                        <img
+                                            src={item.image}
+                                            alt=""
+                                            className="w-[120px] lg:w-[142px] rounded-lg group-hover:scale-105 duration-300"
+                                        />
                                     </Link>
                                     <div className="flex-1">
                                         <Link to={`${config.routes.TinTuc}/${item.slug}`}>
-                                            <h1 className="text-sm text-primary-blueOne font-semibold line-clamp-2 mb-2">
+                                            <h1 className="text-sm lg:text-base text-primary-blueOne font-semibold line-clamp-2 mb-2">
                                                 {item.name}
                                             </h1>
                                         </Link>
@@ -102,33 +101,38 @@ function DisplayTinTuc() {
                     </div>
                 </div>
             </div>
-            <div className="w-[78%] mx-auto mt-28 mb-20">
-                <h1 className="text-[32px] font-bold text-primary-blueOne mb-8">Tin tức liên quan</h1>
+
+            {/* Tin tức liên quan */}
+            <div className="w-[90%] lg:w-[80%] mx-auto mt-16 lg:mt-28 mb-20">
+                <h1 className="text-2xl lg:text-[32px] font-bold text-primary-blueOne mb-8">Tin tức liên quan</h1>
                 <div className="relative">
                     <Swiper
                         ref={swiperRef}
                         modules={[Navigation, Pagination, EffectFade]}
-                        slidesPerView={3}
-                        spaceBetween={20}
-                        slidesPerGroup={1}
+                        slidesPerView={1}
+                        spaceBetween={16}
+                        breakpoints={{
+                            640: { slidesPerView: 2, spaceBetween: 20 },
+                            1024: { slidesPerView: 3, spaceBetween: 20 },
+                        }}
                         loop={true}
                         className="relative z-0 h-full"
                     >
                         {tinTucData.map((item, index) => (
-                            <SwiperSlide className="relative">
-                                <div key={index} className="group overflow-hidden transition-all duration-300 mb-8">
+                            <SwiperSlide key={index} className="relative">
+                                <div className="group overflow-hidden transition-all duration-300 mb-8">
                                     <div className="overflow-hidden rounded-xl">
                                         <Link to={`${config.routes.TinTuc}/${item.slug}`}>
                                             <img
                                                 src={item.image}
                                                 alt=""
-                                                className="w-full h-auto object-cover rounded-xl group-hover:scale-110 duration-300"
+                                                className="w-full h-[200px] lg:h-[229px] object-cover rounded-xl group-hover:scale-110 duration-300"
                                             />
                                         </Link>
                                     </div>
                                     <div className="mt-4">
                                         <Link to={`${config.routes.TinTuc}/${item.slug}`}>
-                                            <h1 className="text-lg font-semibold text-primary-blueOne line-clamp-2">
+                                            <h1 className="text-base lg:text-lg font-semibold text-primary-blueOne line-clamp-2">
                                                 {item.name}
                                             </h1>
                                         </Link>
@@ -141,7 +145,7 @@ function DisplayTinTuc() {
 
                     {/* Nút Prev */}
                     <div
-                        className="absolute top-28 -left-24 -translate-y-1/2 z-10 group w-[72px] h-[72px] border-2 rounded-full flex items-center justify-center hover:bg-primary-blueOne/10 transition-colors duration-300 cursor-pointer"
+                        className="hidden lg:flex absolute top-28 -left-16 -translate-y-1/2 z-10 group w-12 h-12 lg:w-[72px] lg:h-[72px] border-2 rounded-full items-center justify-center hover:bg-primary-blueOne/10 transition-colors duration-300 cursor-pointer"
                         onClick={() => swiperRef.current?.swiper?.slidePrev()}
                     >
                         <FontAwesomeIcon icon={faChevronLeft} size="lg" className="text-primary-blueOne" />
@@ -149,7 +153,7 @@ function DisplayTinTuc() {
 
                     {/* Nút Next */}
                     <div
-                        className="absolute top-28 -right-24 -translate-y-1/2 z-10 group w-[72px] h-[72px] border-2 rounded-full flex items-center justify-center hover:bg-primary-blueOne/10 transition-colors duration-300 cursor-pointer"
+                        className="hidden lg:flex absolute top-28 -right-16 -translate-y-1/2 z-10 group w-12 h-12 lg:w-[72px] lg:h-[72px] border-2 rounded-full items-center justify-center hover:bg-primary-blueOne/10 transition-colors duration-300 cursor-pointer"
                         onClick={() => swiperRef.current?.swiper?.slideNext()}
                     >
                         <FontAwesomeIcon icon={faChevronRight} size="lg" className="text-primary-blueOne" />

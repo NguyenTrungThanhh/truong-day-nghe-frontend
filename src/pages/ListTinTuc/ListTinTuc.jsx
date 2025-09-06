@@ -1,6 +1,6 @@
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import apiAdmin from '@/api/apiAdmin';
 
 function ListTinTuc() {
     const [data, setData] = useState([]);
@@ -9,36 +9,36 @@ function ListTinTuc() {
         document.title = 'Danh sách tin tức';
     }, []);
 
-    const fetchProducts = async () => {
+    const fetchNews = async () => {
         try {
-            const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/v1/admin/TinTuc`);
+            const response = await apiAdmin.get('/TinTuc');
             if (response.data.success) {
                 setData(response.data.news);
             }
         } catch (error) {
-            toast.error('Error fetching playlists');
+            toast.error(error.response?.data?.message || 'Error fetching playlists');
         }
     };
 
-    const deleteProduct = async (id) => {
+    const deleteNews = async (id) => {
         try {
-            const response = await axios.delete(`${import.meta.env.VITE_API_URL}/api/v1/admin/TinTuc/delete/${id}`);
+            const response = await apiAdmin.delete(`/TinTuc/delete/${id}`);
             if (response.data.success) {
-                toast.success('Xóa sản phẩm thành công');
-                fetchProducts();
+                toast.success('Xóa tin tức thành công');
+                fetchNews();
             }
         } catch (error) {
-            toast.error('Error deleting product');
+            toast.error(error.response?.data?.message || 'Error deleting news');
         }
     };
 
     useEffect(() => {
-        fetchProducts();
+        fetchNews();
     }, []);
 
     return (
         <>
-            {localStorage.getItem('isAdmin') ? (
+            {localStorage.getItem('adminToken') ? (
                 <div className="pt-8 pl-5 sm:pt-12 sm:pl-12">
                     <p>Danh sách tin tức</p>
                     <br />
@@ -60,7 +60,7 @@ function ListTinTuc() {
                                     <p className="m-auto line-clamp-2">{item.name}</p>
                                     <p className="m-auto line-clamp-2">{item.category}</p>
                                     <p className="m-auto line-clamp-2">{item.date}</p>
-                                    <p onClick={() => deleteProduct(item._id)} className="m-auto cursor-pointer">
+                                    <p onClick={() => deleteNews(item._id)} className="m-auto cursor-pointer">
                                         x
                                     </p>
                                 </div>

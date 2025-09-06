@@ -38,6 +38,10 @@ import toyotaViosGold from './images/toyota_vios_gold.jpg';
 import camNhanHocVien1 from './images/cam_nhan_hoc_vien_1.jpg';
 import camNhanHocVien2 from './images/cam_nhan_hoc_vien_2.jpg';
 import camNhanHocVien3 from './images/cam_nhan_hoc_vien_3.jpg';
+import doiTac1 from './images/doi_tac_1.jpg';
+import doiTac2 from './images/doi_tac_2.jpg';
+import doiTac3 from './images/doi_tac_3.jpg';
+import doiTac4 from './images/doi_tac_4.jpg';
 
 export const assets = {
     logo,
@@ -69,6 +73,10 @@ export const assets = {
     camNhanHocVien1,
     camNhanHocVien2,
     camNhanHocVien3,
+    doiTac1,
+    doiTac2,
+    doiTac3,
+    doiTac4,
 };
 
 export const tinTucData = [

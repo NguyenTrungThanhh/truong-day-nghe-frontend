@@ -14,7 +14,7 @@ function SidebarAdmin() {
         return () => window.removeEventListener('click', closeMenu);
     }, [isOpen]);
 
-    if (!localStorage.getItem('isAdmin')) return null;
+    if (!localStorage.getItem('adminToken')) return null;
 
     return (
         <>

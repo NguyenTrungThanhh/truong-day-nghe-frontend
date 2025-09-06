@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import SwiperSlider from '@/components/SwiperSlider';
 import GioiThieu from '@/components/GioiThieu';
 import UuDiem from '@/components/UuDiem';
@@ -6,8 +7,8 @@ import ChuongTrinhDaoTao from '@/components/ChuongTrinhDaoTao';
 import ThongTinGiangVien from '@/components/ThongTinGiangVien';
 import CamNhan from '@/components/CamNhan';
 import HinhAnhTaiTrungTam from '@/components/HinhAnhTaiTrungTam';
+import DoiTac from '@/components/DoiTac';
 import TinTuc from '@/components/TinTuc';
-import { useEffect } from 'react';
 
 function Home() {
     useEffect(() => {
@@ -24,6 +25,7 @@ function Home() {
             <ThongTinGiangVien />
             <CamNhan />
             <HinhAnhTaiTrungTam />
+            <DoiTac />
             <TinTuc />
         </>
     );
